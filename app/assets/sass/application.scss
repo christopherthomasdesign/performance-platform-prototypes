@@ -39,3 +39,54 @@
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// Proportional data visualisation bits and bobs
+
+.data-container {
+  width: 100%;
+  padding: 15px;
+}
+
+.data-row {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.data-block {
+  display: inline-block;
+  padding-bottom: 15px;
+  border-bottom: 30px solid $govuk-blue;
+  margin-right: -4px;
+  text-align: center;
+  @include core-16;
+}
+
+.data-block:nth-child(even) {
+  border-bottom: 30px solid $light-blue;
+}
+
+#data-value-1 { width: 67%; }
+#data-value-2 { width: 16%; }
+#data-value-3 { width: 11%; }
+#data-value-4 { width: 6%; }
+
+.data-vert-container {
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.data-vert-block {
+  display: block;
+  padding-left: 15px;
+  border-left: 30px solid $govuk-blue;
+  margin-bottom: 1px;
+}
+
+.data-vert-block:nth-child(even) {
+  border-left: 30px solid $light-blue;
+}
+
+#data-vert-value-1 { height: 67%; }
+#data-vert-value-2 { height: 16%; }
+#data-vert-value-3 { height: 11%; }
+#data-vert-value-4 { height: 6%; }
