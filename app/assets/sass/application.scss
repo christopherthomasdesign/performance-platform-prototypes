@@ -106,3 +106,21 @@
 // .data-cube span:nth-child(n+67) {
 //   background-color: $light-blue;
 // }
+
+.bar-chart {
+  height: 400px;
+}
+
+.bar-chart div {
+  width: 100%;
+  background-color: $govuk-blue;
+  color: $white;
+  padding: 10px;
+  margin-bottom: 1px;
+  @include core-16;
+}
+
+#bar-chart-value-1 { height: 67%; }
+#bar-chart-value-2 { height: 16%; }
+#bar-chart-value-3 { height: 11%; }
+#bar-chart-value-4 { height: 6%; }
