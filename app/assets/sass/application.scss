@@ -91,36 +91,70 @@
 #data-vert-value-3 { height: 11%; }
 #data-vert-value-4 { height: 6%; }
 
+// Stacking chart... Probs just a bigger bar chart tbh
 
-// .data-cube span {
-//   display: inline-block;
-//   float: left;
-//   width: 9%;
-//   height: 20px;
-//   background-color: $govuk-blue;
-//   border: 1px solid $white;
-//   margin-bottom: 0;
-//   line-height: 0;
-// }
-
-// .data-cube span:nth-child(n+67) {
-//   background-color: $light-blue;
-// }
-
-.bar-chart {
+.stack-chart {
   height: 400px;
 }
 
-.bar-chart div {
+.stack-chart div {
   width: 100%;
   background-color: $govuk-blue;
   color: $white;
   padding: 10px;
   margin-bottom: 1px;
   @include core-16;
+  box-sizing: border-box;
 }
 
-#bar-chart-value-1 { height: 67%; }
-#bar-chart-value-2 { height: 16%; }
-#bar-chart-value-3 { height: 11%; }
-#bar-chart-value-4 { height: 6%; }
+.stack-chart div:nth-child(even) {
+  background-color: $light-blue;
+}
+
+#stack-chart-value-1 { height: 67%; }
+#stack-chart-value-2 { height: 16%; }
+#stack-chart-value-3 { height: 11%; }
+#stack-chart-value-4 { height: 6%; }
+
+// Bar chart
+
+.bar-chart {
+  width: 100%;
+  min-height: 1px;
+  position: relative;
+}
+
+.bar-chart li {
+  display: inline-block;
+  width: 15.75%;
+  height: 120px;
+  margin: 0;
+}
+
+.bar {
+  background-color: $govuk-blue;
+  border: 1px solid $white;
+  box-sizing: border-box;
+}
+
+.bar-label {
+  display: block;
+  @include core-16;
+  text-align: center!important;
+  padding: 5px;
+}
+
+.bar-chart li span {
+  display: block;
+  @include core-16;
+  text-align: center!important;
+  padding: 5px;
+}
+
+#bar-chart-value-1 { height: 75%; }
+#bar-chart-value-2 { height: 80%; }
+#bar-chart-value-3 { height: 90%; }
+#bar-chart-value-4 { height: 95%; }
+#bar-chart-value-5 { height: 80%; }
+#bar-chart-value-6 { height: 100%; }
+
