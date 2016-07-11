@@ -48,7 +48,6 @@
   background-color: $govuk-blue;
   width: 100%;
   margin-top: -10px;
-  padding-bottom: 30px;
 
   div {
     max-width: 990px;
@@ -66,7 +65,6 @@
 .time-period-selector {
   padding: 15px 0;
   margin: 0 15px 30px;
-  // border-top: 1px solid $border-colour;
   border-bottom: 1px solid $border-colour;
 
   li {
@@ -80,7 +78,12 @@
 
 }
 
-// Summarise key data at top of page
+.border-top {
+  margin-top: 15px;
+  border-top: 1px solid $border-colour;
+}
+
+// Summarise key data at top of grouped pages
 
 .data-summary {
 
@@ -88,13 +91,9 @@
 
 // Colours for arrows
 
-.data-increase-arrow {
-  color: $button-colour;
-}
+.data-increase-arrow { color: $button-colour; }
 
-.data-decrease-arrow {
-  color: $mellow-red;
-}
+.data-decrease-arrow { color: $mellow-red; }
 
 // Add 30px spacing at top of anchor links
 
@@ -204,18 +203,19 @@ margin:-30px 0 0;
   width: 100%;
   min-height: 1px;
   position: relative;
+  margin-top: 15px;
 }
 
 .bar-chart li {
   display: inline-block;
   width: 15.75%;
-  height: 120px;
+  height: 200px;
   margin: 0;
 }
 
 .bar {
   background-color: $govuk-blue;
-  border: 1px solid $white;
+  border-top: 1px solid $white;
   box-sizing: border-box;
 }
 
@@ -233,10 +233,64 @@ margin:-30px 0 0;
   padding: 5px;
 }
 
-#bar-chart-value-1 { height: 75%; }
+.phone {
+  background-color: $light-blue;
+}
+
+.paper {
+  background-color: $light-blue;
+  opacity: 0.5;
+}
+
+.bar-chart-key {
+  margin: 15px 0;
+
+  li {
+    display: inline-block;
+    margin-right: 15px;
+    list-style-type: square;
+  }
+
+  li:before {
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-color: $light-blue;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  li:first-of-type:before {
+    background-color: $govuk-blue;
+  }
+
+  li:last-of-type:before {
+    opacity: 0.5;
+  }
+
+}
+
+
+#bar-chart-value-1 { height: 70%; }
+#bar-chart-value-1-1 { height: 15%; }
+#bar-chart-value-1-2 { height: 10%; }
+
 #bar-chart-value-2 { height: 80%; }
+#bar-chart-value-2-1 { height: 10%; }
+#bar-chart-value-2-2 { height: 10%; }
+
 #bar-chart-value-3 { height: 90%; }
+
 #bar-chart-value-4 { height: 95%; }
+#bar-chart-value-4-1 { height: 10%; }
+#bar-chart-value-4-2 { height: 7%; }
+
 #bar-chart-value-5 { height: 80%; }
+#bar-chart-value-5-1 { height: 8%; }
+#bar-chart-value-5-2 { height: 5%; }
+
 #bar-chart-value-6 { height: 100%; }
+#bar-chart-value-6-1 { height: 10%; }
+#bar-chart-value-6-2 { height: 8%; }
 
