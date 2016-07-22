@@ -87,16 +87,58 @@
   font-weight: bold;
 }
 
-// Summarise key data at top of grouped pages
+// Filters
 
-.data-summary {
+.filter-panel {
+  padding: 0 30px 30px 15px;
+}
 
+.filter-tags {
+  @include core-16; 
+  display: block;
+  margin-bottom: 15px;
+
+  li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 2px 5px 0;
+    background-color: $panel-colour;
+
+    a {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/close-icon.png");
+      background-size: 20px;
+      background-repeat: none;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+  }
+
+}
+
+// Listing
+
+.transaction-listing {
+  border-top: 1px solid $border-colour;
+
+  h3 {
+    margin-top: 15px;
+  }
+
+}
+
+// Change to filter form controls to make them 100%
+
+.form-control-1 {
+  width: 100%;
 }
 
 // Colours for arrows
 
 .data-increase-arrow { color: $button-colour; }
-
 .data-decrease-arrow { color: $mellow-red; }
 
 // Add 30px spacing at top of anchor links
@@ -108,7 +150,7 @@ height:30px;
 margin:-30px 0 0;
 }
 
-// 
+// A bit of a hack to avoid needing to use a table layout for lists of data, allowing right-aligned numbers
 
 .trending-figures {
   
@@ -116,7 +158,7 @@ margin:-30px 0 0;
 
     span { 
       display: inline-block;
-      min-width: 50px; 
+      min-width: 70px; 
       text-align: right;
       margin-right: 5px;
     }
@@ -297,4 +339,7 @@ margin:-30px 0 0;
 #bar-chart-value-6 { height: 100%; }
 #bar-chart-value-6-1 { height: 10%; }
 #bar-chart-value-6-2 { height: 8%; }
+
+
+// uh-oh
 
