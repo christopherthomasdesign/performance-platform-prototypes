@@ -1,142 +1,214 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Blank page
+  GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge" style="margin-bottom:0px;">Group performance data of services</h1>
+    </div>
+  </div>
+
 	<div class="grid-row">
 
     <div class="column-one-third filter-panel">
     	<h3 class="heading-medium">
-    		Show data by
+    		Filter by
   		</h3>
-    	<div class="form-group">
+
+      <div class="form-group">
+        <div class="test-case" style="overflow: visible">
+          <label for="department" class="department-label">Department</label>
+          <div>
+            <select id="department" class="typeahead js-hidden form-control-1" name="department" aria-required="true">
+              <option value=""></option>
+              <option value="Department for Education">Department for Education</option>
+              <option value="Department for Transport">Department for Transport</option>
+              <option value="HM Revenue &amp; Customs">HM Revenue &amp; Customs</option>
+              <option value="Home Office">Home Office</option>
+              <option value="Ministry of Defence">Ministry of Defence</option>
+            </select>
+          </div>
+        </div>
+      </div>  
+
+      <div class="form-group">
+        <div class="test-case" style="overflow: visible">
+          <label for="agency" class="agency-label">Agency</label>
+          <div>
+            <select id="agency" class="typeahead js-hidden form-control-1" name="agency" aria-required="true">
+              <option value=""></option>
+              <option value="Driver and Vehicle Licensing Agency DVLA">Driver and Vehicle Licensing Agency</option>
+              <option value="Driver and Vehicle Standards Agency DVSA">Driver and Vehicle Standards Agency</option>
+              <option value="Education Funding Agency EFA">Education Funding Agency EFA</option>
+              <option value="Ofsted">Ofsted</option>
+              <option value="Student Finance England SFE">Student Finance England SFE</option>
+            </select>
+          </div>
+        </div>
+      </div>  
+
+      <!-- <div class="form-group">
+        <div class="test-case" style="overflow: visible">
+          <label for="topic" class="topic-label">Topic</label>
+          <div>
+            <select id="topic" class="typeahead js-hidden form-control-1" name="topic" aria-required="true">
+              <option value=""></option>
+              <option value="Boating">Boating</option>
+              <option value="Driving">Driving</option>
+              <option value="Early years and childcare">Early years and childcare</option>
+              <option value="Funding">Funding</option>
+              <option value="Visas and immigration">Visas and immigration</option>
+            </select>
+          </div>
+        </div>
+      </div> -->
+
+      <form class="form">
+        <label class="form-label" for="select-box">Topic</label>
+        <select class="form-control form-control-1" id="select-box">
+          <option>- select -</option>
+          <option value="1">Boating</option>
+          <option value="2">Driving</option>
+          <option value="3">Early years and childcare</option>
+          <option value="4">Funding</option>
+          <option value="5">Visas and immigration</option>
+        </select>
+      </form>
+    	<!-- <div class="form-group">
 			  <label class="form-label" for="first-name">Department</label>
 			  <input class="form-control form-control-1" id="first-name" name="first-name-2" type="text">
-			</div>
-			<div class="form-group">
-			  <label class="form-label" for="last-name">Agency</label>
-			  <input class="form-control form-control-1" id="last-name" name="last-name-2" type="text">
-			</div>
-			<div class="form-group">
-			  <label class="form-label" for="first-name">Topics</label>
-			  <input class="form-control form-control-1" id="first-name" name="first-name-2" type="text">
-			</div>
-			<div class="form-group">
-			  <label class="form-label" for="last-name">Things used</label>
-			  <input class="form-control form-control-1" id="last-name" name="last-name-2" type="text">
-			</div>
+			</div>-->
     </div>
 
     <div class="column-two-thirds">
 
       <div class="grid-row">
-      	<h3 class="heading-medium">
-      		Showing 12 services
-    		</h3>
-      	<ul class="filter-tags">
-      		<li>Department of Transport <a href="#" class="close-tag"></a></li>
-      		<li>Department of Something Else <a href="#" class="close-tag"></a></li>
-      		<li>Department of Another Thing <a href="#" class="close-tag"></a></li>
-      	</ul>
+        <div class="column-full">
+        	<h3 class="heading-medium">
+        		Showing 12 things
+      		</h3>
+        	<ul class="filter-tags">
+        		<li><a href="#">Department of Transport <span></span></a></li>
+            <li><a href="#">Department of Education <span></span></a></li>
+            <li><a href="#">Driving <span></span></a></li>
+        	</ul>
+        </div>  
       </div>  
 
+      <ul>
+        <!-- a transaction -->
+        <li class="transaction-listing">
+          <div class="grid-row">
+            <div class="column-two-thirds">
+              <h3 class="heading-medium"><a href="#">Name of transaction</a></h3>
+              <p class="text-supporting">Department of Something</p>
+            </div>
+          </div> 
+          <div class="grid-row"> 
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">3.6k</h3>
+                <p class="bold-xsmall">transactions</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">89%</h3>
+                <p class="bold-xsmall">transactions completed</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">80%</h3>
+                <p class="bold-xsmall">transactions online</p>
+              </div>
+            </div>
+          </div>  
+        </li>
 
-      <div class="grid-row">
-        <div class="transaction-listing">
-          <h3 class="heading-medium">
-            Apply for a thing
-          </h3>
-          <div class="column-one-third">
-            <div class="data">
-              <h2 class="bold-xlarge">3.6k</h2>
-              <p class="bold-xsmall">transactions</p>
+        <!-- a transaction -->
+        <li class="transaction-listing">
+          <div class="grid-row">
+            <div class="column-two-thirds">
+              <h3 class="heading-medium"><a href="#">Name of transaction</a></h3>
+              <p class="text-supporting">Department of Something</p>
             </div>
-          </div>
-          <div class="column-one-third">
-            <div class="data">
-              <h2 class="bold-xlarge">80%</h2>
-              <p class="bold-xsmall">transactions online</p>
+          </div> 
+          <div class="grid-row"> 
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">3.6k</h3>
+                <p class="bold-xsmall">transactions</p>
+              </div>
             </div>
-          </div>
-          <div class="column-one-third">
-            <div class="data">
-              <h2 class="bold-xlarge">#</h2>
-              <p class="bold-xsmall">number</p>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">89%</h3>
+                <p class="bold-xsmall">transactions completed</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">80%</h3>
+                <p class="bold-xsmall">transactions online</p>
+              </div>
+            </div>
+          </div>  
+        </li>
+
+        <!-- a transaction -->
+        <li class="transaction-listing">
+          <div class="grid-row">
+            <div class="column-two-thirds">
+              <h3 class="heading-medium"><a href="#">Name of transaction</a></h3>
+              <p class="text-supporting">Department of Something</p>
+            </div>
+          </div> 
+          <div class="grid-row"> 
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">3.6k</h3>
+                <p class="bold-xsmall">transactions</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">89%</h3>
+                <p class="bold-xsmall">transactions completed</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">80%</h3>
+                <p class="bold-xsmall">transactions online</p>
+              </div>
+            </div>
+          </div>  
+        </li>
+
+      </ul>    
 
 
-      <div class="grid-row">
-        <div class="transaction-listing">
-          <h3 class="heading-medium">
-            Apply for a thing
-          </h3>
-          <div class="column-one-third">
-            <div class="data">
-              <h2 class="bold-xlarge">3.6k</h2>
-              <p class="bold-xsmall">transactions</p>
-            </div>
-          </div>
-          <div class="column-one-third">
-            <div class="data">
-              <h2 class="bold-xlarge">80%</h2>
-              <p class="bold-xsmall">transactions online</p>
-            </div>
-          </div>
-          <div class="column-one-third">
-            <div class="data">
-              <h2 class="bold-xlarge">#</h2>
-              <p class="bold-xsmall">number</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="grid-row">
-        <div class="transaction-listing">
-          <h3 class="heading-medium">
-            Apply for a thing
-          </h3>
-          <div class="column-one-third">
-            <div class="data">
-              <h2 class="bold-xlarge">3.6k</h2>
-              <p class="bold-xsmall">transactions</p>
-            </div>
-          </div>
-          <div class="column-one-third">
-            <div class="data">
-              <h2 class="bold-xlarge">80%</h2>
-              <p class="bold-xsmall">transactions online</p>
-            </div>
-          </div>
-          <div class="column-one-third">
-            <div class="data">
-              <h2 class="bold-xlarge">#</h2>
-              <p class="bold-xsmall">number</p>
-            </div>
-          </div>
-        </div>
-      </div>
       
-
-      <div>
-
+      
     </div>
-
-
-
 
 
   </div>
 
 </main>
 
+{% endblock %}
+
+{% block body_end %}
+{{ super() }}
+  <script src="/public/javascripts/patterns/autocomplete/03/typeahead-aria.js"></script>
+  <script src="/public/javascripts/patterns/autocomplete/03/init-autocomplete.js"></script>
+  <script src="/public/javascripts/custom-grouping-filter.js"></script>
 {% endblock %}
