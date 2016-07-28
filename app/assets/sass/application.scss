@@ -100,28 +100,29 @@
 
   li {
     display: inline-block;
-    margin: 0 2px 5px 0;
+    margin: 0 5px 5px 0;
     background-color: $panel-colour;
-
-    a {
-      display: inline-block;
-      padding: 10px;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    span {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      background-image: url("../images/close-icon.png");
-      background-size: 20px;
-      background-repeat: none;
-      vertical-align: middle;
-      margin-left: 5px;
-    }
-
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
   }
+
+  li:after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/close-icon.png");
+    background-size: 20px;
+    background-repeat: none;
+    vertical-align: middle;
+    margin-left: 10px;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
 
 }
 
@@ -149,6 +150,13 @@
 .form-control-1 {
   width: 100%;
 }
+
+// Data summary numbers at top of pages
+
+.data-summary {
+  margin-bottom: -15px;
+}
+
 
 // Colours for arrows
 
