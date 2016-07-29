@@ -52,16 +52,12 @@ $(document).ready(function() {
 	// do this again but for the topic dropdown (I have copied and pasted the code this is bad)
 
 	$("#topics").change(function(){
-		
+
  		var value = $(this).val();
-
  		$(".filter-tags").append("<li>"+value+"</li>");
-
 	 	$(".filter-tags li").click(function(){
 	  	$(this).remove();
-
 	  	var values = [];
-
 			$(".filter-tags li").each(function(i, el) { values.push($(el).attr("data-dep")) });
 
 			if (values.length == 0) {
@@ -75,14 +71,10 @@ $(document).ready(function() {
 	    refreshNumber();
 		});
 		refreshNumber();
-
 	 	var valueSelected = $(".filter-tags li").text();
-
 	 	var last_tag = $(".filter-tags li").last();
 	 	$(last_tag).attr("data-topic", value);
-
     var values = [];
-
 		$(".filter-tags li").each(function(i, el) { values.push($(el).attr("data-topic")) });
 
 		$('.transaction-listing').each(
@@ -90,7 +82,6 @@ $(document).ready(function() {
 		    if ( $.inArray($(tx).attr("data-topic"), values) != -1) { $(tx).show() } else { $(tx).hide() }
 		});
 		refreshNumber();
-
 	});
 
 	// refresh item number when adding and removing things
@@ -99,9 +90,7 @@ $(document).ready(function() {
   	var numberOfItems = $('.transaction-listing').filter(function() {
 		  return $(this).css('display') !== 'none';
 		}).length;
-
   	$("#number-of-items").text( numberOfItems );
-
   }
 
 });

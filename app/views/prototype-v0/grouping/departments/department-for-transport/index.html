@@ -1,0 +1,243 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">
+      	<span class="heading-secondary">Performance data for</span>
+      	The Department for Transport
+      </h1>
+    </div>
+    <div class="column-third">
+      <br><br>
+      <div class="notice">
+        <i class="icon icon-file-download">
+          <span class="visuallyhidden">Download file</span>
+        </i>
+        <strong class="bold-small">
+          <a href="#">Download data (CSV, 10KB)</a>
+        </strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="time-period-selector">
+      <ul>
+        <li>View data for past</li>
+        <li><a href="#">3 months</a></li>|
+        <li><a href="#">6 months</a></li>|
+        <li id="time-period-selected">1 year</li>|
+        <li><a href="#">2 years</a></li>
+      </ul>  
+    </div>  
+  </div>
+
+  <!-- summary -->
+
+  <div class="grid-row data-summary">
+    <div class="column-one-quarter">
+      <div class="data">
+        <h2 class="bold-xlarge">£5.3bn</h2>
+        <p class="bold-xsmall">annual departmental budget in 2015</p>
+      </div>
+    </div>
+    <div class="column-one-quarter">
+      <div class="data">
+        <h2 class="bold-xlarge">77</h2>
+        <p class="bold-xsmall">services
+        <br><a href="#service-list">View full list</a></p>
+      </div>
+    </div>
+    <div class="column-one-quarter">
+      <div class="data">
+        <h2 class="bold-xlarge">258m</h2>
+        <p class="bold-xsmall">transactions
+        <br><a href="#transactions">More info</a></p>
+      </div>
+    </div> 
+    <div class="column-one-quarter">
+      <div class="data">
+        <h2 class="bold-xlarge">81%</h2>
+        <p class="bold-xsmall">transactions online
+        <br><a href="#channel-breakdown">More info</a></p>
+      </div>
+    </div>   
+  </div>
+
+  <hr>
+
+  <!-- channel breakdown - need to change service data to be a table layout so numbers can align correctly -->
+
+  <div class="grid-row" id="channel-breakdown">
+
+    <div class="column-one-third">
+      <div class="data">
+        <h2 class="bold-xxlarge">81%</h2>
+        <p class="bold-medium">transactions online</p>
+        <p class="lede"><span class="data-increase-arrow">&#9650;</span> +1.2% increase</p>
+        <p class="font-xsmall">
+          <span class="bold-xsmall">Breakdown</span><br>
+          72% online<br>
+          15% paper<br>
+          10% phone<br>
+          8% face to face<br>
+        </p>
+      </div>
+    </div>  
+
+    <div class="column-two-thirds">
+      <h4 class="heading-small"><span class="data-increase-arrow">&#9650;</span> Services with increasing online transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>+10%</span> <a href="#">Apply for a provisional driving license</a></li>
+        <li><span>+9%</span> <a href="#">Vehicle tax checks by individuals</a></li>
+        <li><span>+8%</span> <a href="#">Vehicle tax renewals</a></li>
+        <li><span>+7%</span> <a href="#">Driving license checks by third parties</a></li>
+        <li><span>+6%</span> <a href="#">Reports of destroyed or damaged vehicles</a></li>
+      </ul>
+      <br>
+      <h4 class="heading-small"><span class="data-decrease-arrow">&#9660;</span> Services with decreasing online transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>&minus;10%</span> <a href="#">Driving instructor applications</a></li>
+        <li><span>&minus;9%</span> <a href="#">Replace a tax disc</a></li>
+        <li><span>&minus;8%</span> <a href="#">Digital tachograph card applications</a></li>
+        <li><span>&minus;7%</span> <a href="#">HGV and PSV test bookings</a></li>
+        <li><span>&minus;6%</span> <a href="#">Report death of driver</a></li>
+      </ul>
+    </div> 
+
+  </div>  
+
+  <br>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <details>
+        <summary><span class="summary font-xsmall">How is this data calculated?</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>Data for online users is collected via Google Analytics. Other channels are collected by etc. etc.</p>
+        </div>
+      </details>
+    </div>
+  </div>  
+
+  <hr>
+
+  <!-- transactions info -->
+
+  <div class="grid-row" id="transactions">
+
+    <div class="column-one-third">
+      <div class="data">
+        <h2 class="bold-xxlarge">258m</h2>
+        <p class="bold-medium">transactions</p>
+      </div>
+    </div>  
+
+    <div class="column-two-thirds">
+      <h4 class="heading-small">Services with highest total transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>1.2m</span> <a href="#">Apply for a provisional driving license</a></li>
+        <li><span>987k</span> <a href="#">Vehicle tax checks by individuals</a></li>
+        <li><span>880k</span> <a href="#">Vehicle tax renewals</a></li>
+        <li><span>781k</span> <a href="#">Driving license checks by third parties</a></li>
+        <li><span>685k</span> <a href="#">Reports of destroyed or damaged vehicles</a></li>
+      </ul> 
+      <br>
+
+      <h4 class="heading-small">Services with lowest total transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>0</span> <a href="#">Amend trade license</a></li>
+        <li><span>0</span> <a href="#">Fleet licence registrations and amendments</a></li>
+        <li><span>0</span> <a href="#">Replace tax disc</a></li>
+        <li><span>1,484</span> <a href="#">Applications and renewals for a diplomatic driver permit</a></li>
+        <li><span>1,826</span> <a href="#">Driving instructors: trainee licence applications</a></li>
+      </ul>
+    </div> 
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <details>
+        <summary><span class="summary font-xsmall">How is this data calculated?</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>Data for online users is collected via Google Analytics. Other channels are collected by etc. etc.</p>
+        </div>
+      </details>
+    </div>
+  </div> 
+
+  <hr>
+
+  <!-- full list of services -->
+
+  <div class="grid-row" id="service-list">
+
+    <div class="column-one-third">
+      <div class="data">
+        <h2 class="bold-xxlarge">78</h2>
+        <p class="bold-medium">services</p>
+        <p>Some text explaining what this list contains, and flagging up that it's not yet a definitive list.</p>
+      </div>
+    </div> 
+
+    <div class="column-two-thirds">
+      <h4 class="heading-small">Department of Transport</h4>
+      <ul class="list">
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+      </ul>
+    </div>  
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <details>
+        <summary><span class="summary font-xsmall">How is this data calculated?</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>Data for online users is collected via Google Analytics. Other channels are collected by etc. etc.</p>
+        </div>
+      </details>
+    </div>
+  </div> 
+
+  <hr>
+
+  <!-- another break -->
+
+<!--   <div class="grid-row">
+    <div class="column-one-third">
+      <h4 class="bold-large">Notifications</h4>
+    </div>
+  </div> -->
+
+</main>
+
+{% endblock %}
+
+
