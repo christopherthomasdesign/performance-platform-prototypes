@@ -64,8 +64,6 @@
 
 .time-period-selector {
   padding: 15px 0;
-  margin: 0 15px 30px;
-
 
   li {
     display: inline;
@@ -80,6 +78,7 @@
 
 .border-bottom {
   border-bottom: 1px solid $border-colour;
+  margin-bottom: 30px;
 }
 
 .border-top {
@@ -149,7 +148,7 @@
   color: $secondary-text-colour;
 }
 
-// Change to filter form controls to make them 100%
+// Add class form controls to make them 100% width
 
 .form-control-1 {
   width: 100%;
@@ -165,10 +164,14 @@
 .data-box {
   color: $white;
   background-color: $govuk-blue;
-  padding: 30px 30px 15px;
-  border: 5px solid $white;
-}
+  padding: 25px 25px 10px;
+  border: 2.5px solid $white;
 
+  a {
+    color: $white;
+  }
+
+}
 
 // Colours for arrows
 
@@ -192,11 +195,21 @@ margin:-30px 0 0;
 
     span { 
       display: inline-block;
-      min-width: 70px; 
+      min-width: 65px; 
       text-align: right;
       margin-right: 5px;
     }
 
+  }
+
+}
+
+// Channel breakdown figures
+
+.breakdown {
+
+  h3 {
+    margin-bottom: 10px;
   }
 
 }
@@ -288,9 +301,9 @@ margin:-30px 0 0;
 
 .bar-chart li {
   display: inline-block;
-  width: 15.75%;
-  height: 200px;
-  margin: 0;
+  width: 23%;
+  height: 250px;
+  margin: 0 8px 0 0;
 }
 
 .bar {
@@ -299,18 +312,10 @@ margin:-30px 0 0;
   box-sizing: border-box;
 }
 
-.bar-label {
-  display: block;
-  @include core-16;
-  text-align: center!important;
-  padding: 5px;
-}
-
 .bar-chart li span {
   display: block;
-  @include core-16;
   text-align: center!important;
-  padding: 5px;
+  padding: 10px;
 }
 
 .phone {

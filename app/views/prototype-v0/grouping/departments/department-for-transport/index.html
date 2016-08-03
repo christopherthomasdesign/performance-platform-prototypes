@@ -12,7 +12,7 @@
     <div class="column-two-thirds">
       <h1 class="heading-xlarge">
       	<span class="heading-secondary">Performance data for</span>
-      	The Department for Transport
+      	Department for Transport
       </h1>
     </div>
     <div class="column-third">
@@ -29,50 +29,51 @@
   </div>
 
   <div class="grid-row">
-    <div class="time-period-selector">
-      <ul>
-        <li>View data for past</li>
-        <li><a href="#">3 months</a></li>|
-        <li><a href="#">6 months</a></li>|
-        <li id="time-period-selected">1 year</li>|
-        <li><a href="#">2 years</a></li>
-      </ul>  
-    </div>  
+    <div class="column-full">
+      <div class="time-period-selector">
+        <ul>
+          <li>View data for past</li>
+          <li><a href="#">3 months</a></li> |
+          <li id="time-period-selected">1 year</li> |
+          <li><a href="#">2 years</a></li>
+        </ul>  
+      </div> 
+    </div> 
   </div>
 
   <!-- summary -->
 
   <div class="grid-row data-summary">
-    <div class="column-one-quarter">
-      <div class="data">
-        <h2 class="bold-xlarge">£5.3bn</h2>
-        <p class="bold-xsmall">annual departmental budget in 2015</p>
+    <div class="column-full">
+      <div class="column-one-quarter data-box">
+        <div class="data">
+          <h2 class="bold-xlarge">£5bn</h2>
+          <p class="bold-xsmall">annual departmental budget in 2015</p>
+        </div>
       </div>
-    </div>
-    <div class="column-one-quarter">
-      <div class="data">
-        <h2 class="bold-xlarge">77</h2>
-        <p class="bold-xsmall">services
-        <br><a href="#service-list">View full list</a></p>
+      <div class="column-one-quarter data-box">
+        <div class="data">
+          <h2 class="bold-xlarge">77</h2>
+          <p class="bold-xsmall">services
+          <br><a href="#service-list">View full list</a></p>
+        </div>
       </div>
-    </div>
-    <div class="column-one-quarter">
-      <div class="data">
-        <h2 class="bold-xlarge">258m</h2>
-        <p class="bold-xsmall">transactions
-        <br><a href="#transactions">More info</a></p>
-      </div>
-    </div> 
-    <div class="column-one-quarter">
-      <div class="data">
-        <h2 class="bold-xlarge">81%</h2>
-        <p class="bold-xsmall">transactions online
-        <br><a href="#channel-breakdown">More info</a></p>
-      </div>
-    </div>   
+      <div class="column-one-quarter data-box">
+        <div class="data">
+          <h2 class="bold-xlarge">258m</h2>
+          <p class="bold-xsmall">transactions
+          <br><a href="#transactions">More info</a></p>
+        </div>
+      </div> 
+      <div class="column-one-quarter data-box">
+        <div class="data">
+          <h2 class="bold-xlarge">81%</h2>
+          <p class="bold-xsmall">transactions online
+          <br><a href="#channel-breakdown">More info</a></p>
+        </div>
+      </div> 
+    </div>    
   </div>
-
-  <hr>
 
   <!-- channel breakdown - need to change service data to be a table layout so numbers can align correctly -->
 
@@ -82,34 +83,33 @@
       <div class="data">
         <h2 class="bold-xxlarge">81%</h2>
         <p class="bold-medium">transactions online</p>
-        <p class="lede"><span class="data-increase-arrow">&#9650;</span> +1.2% increase</p>
-        <p class="font-xsmall">
-          <span class="bold-xsmall">Breakdown</span><br>
-          72% online<br>
-          15% paper<br>
-          10% phone<br>
-          8% face to face<br>
-        </p>
+      </div>  
+      <!-- <p class="lede"><span class="data-increase-arrow">&#9650;</span> +1.2% increase</p> -->
+      <div class="data breakdown">
+        <h3 class="bold-large">9% <span class="lede">phone</span></h3>
+        <h3 class="bold-large">5% <span class="lede">face-to-face</span></h3>
+        <h3 class="bold-large">4% <span class="lede">paper</span></h3>
+        <h3 class="bold-large">1% <span class="lede">other</span></h3>
       </div>
     </div>  
 
     <div class="column-two-thirds">
-      <h4 class="heading-small"><span class="data-increase-arrow">&#9650;</span> Services with increasing online transactions</h4>
+      <h4 class="heading-small"><span class="data-increase-arrow">&#9650;</span> Services with highest online transactions</h4>
       <ul class="list trending-figures">
-        <li><span>+10%</span> <a href="#">Apply for a provisional driving license</a></li>
-        <li><span>+9%</span> <a href="#">Vehicle tax checks by individuals</a></li>
-        <li><span>+8%</span> <a href="#">Vehicle tax renewals</a></li>
-        <li><span>+7%</span> <a href="#">Driving license checks by third parties</a></li>
-        <li><span>+6%</span> <a href="#">Reports of destroyed or damaged vehicles</a></li>
+        <li><span>98%</span> <a href="../transactions/apply-for-a-provisional-driving-license">Apply for a provisional driving license</a></li>
+        <li><span>93%</span> <a href="#">Vehicle tax checks by individuals</a></li>
+        <li><span>89%</span> <a href="#">Vehicle tax renewals</a></li>
+        <li><span>89%</span> <a href="#">Driving license checks by third parties</a></li>
+        <li><span>87%</span> <a href="#">Reports of destroyed or damaged vehicles</a></li>
       </ul>
       <br>
-      <h4 class="heading-small"><span class="data-decrease-arrow">&#9660;</span> Services with decreasing online transactions</h4>
+      <h4 class="heading-small"><span class="data-decrease-arrow">&#9660;</span> Services with lowest online transactions</h4>
       <ul class="list trending-figures">
-        <li><span>&minus;10%</span> <a href="#">Driving instructor applications</a></li>
-        <li><span>&minus;9%</span> <a href="#">Replace a tax disc</a></li>
-        <li><span>&minus;8%</span> <a href="#">Digital tachograph card applications</a></li>
-        <li><span>&minus;7%</span> <a href="#">HGV and PSV test bookings</a></li>
-        <li><span>&minus;6%</span> <a href="#">Report death of driver</a></li>
+        <li><span>0</span> <a href="#">Driving instructor applications</a></li>
+        <li><span>0</span> <a href="#">Replace a tax disc</a></li>
+        <li><span>0</span> <a href="#">Digital tachograph card applications</a></li>
+        <li><span>0</span> <a href="#">HGV and PSV test bookings</a></li>
+        <li><span>0</span> <a href="#">Report death of driver</a></li>
       </ul>
     </div> 
 
@@ -122,7 +122,7 @@
       <details>
         <summary><span class="summary font-xsmall">How is this data calculated?</span></summary>
         <div class="panel panel-border-narrow">
-          <p>Data for online users is collected via Google Analytics. Other channels are collected by etc. etc.</p>
+          <p>Data for online usage is collected via analytics software. Data for all other channels is collected at contact centres. Data is submitted on a quarterly basis.</p>
         </div>
       </details>
     </div>
@@ -169,11 +169,11 @@
       <details>
         <summary><span class="summary font-xsmall">How is this data calculated?</span></summary>
         <div class="panel panel-border-narrow">
-          <p>Data for online users is collected via Google Analytics. Other channels are collected by etc. etc.</p>
+          <p>Data for online usage is collected via analytics software. Data for all other channels is collected at contact centres. Data is submitted on a quarterly basis.</p>
         </div>
       </details>
     </div>
-  </div> 
+  </div>
 
   <hr>
 
@@ -183,14 +183,12 @@
 
     <div class="column-one-third">
       <div class="data">
-        <h2 class="bold-xxlarge">78</h2>
+        <h2 class="bold-xxlarge">77</h2>
         <p class="bold-medium">services</p>
-        <p>Some text explaining what this list contains, and flagging up that it's not yet a definitive list.</p>
       </div>
     </div> 
 
     <div class="column-two-thirds">
-      <h4 class="heading-small">Department of Transport</h4>
       <ul class="list">
         <li><a href="#">Name of service</a></li>
         <li><a href="#">Name of service</a></li>
@@ -210,31 +208,69 @@
         <li><a href="#">Name of service</a></li>
         <li><a href="#">Name of service</a></li>
         <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Name of service</a></li>  
       </ul>
     </div>  
 
   </div>
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <details>
-        <summary><span class="summary font-xsmall">How is this data calculated?</span></summary>
-        <div class="panel panel-border-narrow">
-          <p>Data for online users is collected via Google Analytics. Other channels are collected by etc. etc.</p>
-        </div>
-      </details>
-    </div>
-  </div> 
-
-  <hr>
-
-  <!-- another break -->
-
-<!--   <div class="grid-row">
-    <div class="column-one-third">
-      <h4 class="bold-large">Notifications</h4>
-    </div>
-  </div> -->
 
 </main>
 
