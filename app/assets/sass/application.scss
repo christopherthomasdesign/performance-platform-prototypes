@@ -40,6 +40,12 @@
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.column-full {
+  width: 100%;
+  padding: 0 15px 30px;
+  display: block;
+}
+
 // Header banner (feel like this class should already exist somewhere else)
 
 .header-banner {
