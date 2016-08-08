@@ -27,7 +27,7 @@
         <div class="test-case" style="overflow: visible">
           <label for="department" class="department-label">Department</label>
           <div>
-            <select id="department" class="typeahead js-hidden form-control-1" name="department" aria-required="true">
+            <select id="department" class="data-dep typeahead js-hidden form-control-1" name="department" aria-required="true">
               <option value=""></option>
               <option value="Department for Education">Department for Education</option>
               <option value="Department for Transport">Department for Transport</option>
@@ -38,11 +38,11 @@
         </div>
       </div>
 
-      <div class="form-group">
+      <!-- <div class="form-group">
         <div class="test-case" style="overflow: visible">
           <label for="agency" class="agency-label">Agency</label>
           <div>
-            <select id="agency" class="typeahead js-hidden form-control-1" name="agency" aria-required="true">
+            <select id="agency" class="data-agency typeahead js-hidden form-control-1" name="agency" aria-required="true">
               <option value=""></option>
               <option value="Driver and Vehicle Licensing Agency DVLA">Driver and Vehicle Licensing Agency</option>
               <option value="Driver and Vehicle Standards Agency DVSA">Driver and Vehicle Standards Agency</option>
@@ -52,7 +52,7 @@
             </select>
           </div>
         </div>
-      </div>  
+      </div> -->  
 
       <div class="form-group">
         <label class="form-label" for="select-box">Topic</label>
@@ -60,7 +60,8 @@
           <option></option>
           <option value="Boating">Boating</option>
           <option value="Driving">Driving</option>
-          <option value="Early years and childcare">Early years and childcare</option>
+          <option value="Childcare and parenting">Childcare and parenting</option>
+          <option value="Crime, justice and the law">Crime, justice and the law</option>
         </select>
       </div>
 
@@ -84,7 +85,7 @@
       <ul id="transactions">
 
         <!-- a transaction -->
-        <li class="transaction-listing" data-dep="Department for Transport" data-topic="Boating">
+        <li class="transaction-listing" data-dep="Department for Transport" data-agency="Driver and Vehicle Licensing Agency DVLA" data-topic="Boating">
           <div class="grid-row">
             <div class="column-full">
               <h3 class="heading-medium"><a href="#">Apply for a boating license</a></h3>
@@ -94,7 +95,7 @@
           <div class="grid-row"> 
             <div class="column-one-third">
               <div class="data">
-                <h3 class="bold-large">3.6k</h3>
+                <h3 class="bold-large">6.3k</h3>
                 <p class="bold-xsmall">transactions</p>
               </div>
             </div>
@@ -114,17 +115,17 @@
         </li>
 
         <!-- a transaction -->
-        <li class="transaction-listing" data-dep="Department for Transport" data-topic="Driving">
+        <li class="transaction-listing" data-dep="Department for Transport" data-agency="Driver and Vehicle Licensing Agency DVLA" data-topic="Driving">
           <div class="grid-row">
             <div class="column-full">
-              <h3 class="heading-medium"><a href="transaction-page">Apply for a provisional driving license</a></h3>
+              <h3 class="heading-medium"><a href="/prototype-v0/grouping/transactions/apply-for-a-provisional-driving-license">Apply for a provisional driving license</a></h3>
               <p class="text-supporting">Department for Transport</p>
             </div>
           </div> 
           <div class="grid-row"> 
             <div class="column-one-third">
               <div class="data">
-                <h3 class="bold-large">3.6k</h3>
+                <h3 class="bold-large">1.1k</h3>
                 <p class="bold-xsmall">transactions</p>
               </div>
             </div>
@@ -144,7 +145,7 @@
         </li>
 
         <!-- a transaction -->
-        <li class="transaction-listing" data-dep="Home Office" data-topic="Early years and childcare">
+        <li class="transaction-listing" data-dep="Home Office" data-topic="Childcare and parenting">
           <div class="grid-row">
             <div class="column-full">
               <h3 class="heading-medium"><a href="#">Apply to foster a child through your council</a></h3>
@@ -154,7 +155,7 @@
           <div class="grid-row"> 
             <div class="column-one-third">
               <div class="data">
-                <h3 class="bold-large">3.6k</h3>
+                <h3 class="bold-large">49k</h3>
                 <p class="bold-xsmall">transactions</p>
               </div>
             </div>
@@ -174,7 +175,7 @@
         </li>
 
         <!-- a transaction -->
-        <li class="transaction-listing" data-dep="Home Office" data-topic="Early years and childcare">
+        <li class="transaction-listing" data-dep="Home Office" data-topic="Childcare and parenting">
           <div class="grid-row">
             <div class="column-full">
               <h3 class="heading-medium"><a href="#">Become a child's legal parent</a></h3>
@@ -204,7 +205,37 @@
         </li>
 
         <!-- a transaction -->
-        <li class="transaction-listing" data-dep="Home Office" data-topic="Early years and childcare">
+        <li class="transaction-listing" data-dep="Department for Education" data-topic="Childcare and parenting">
+          <div class="grid-row">
+            <div class="column-full">
+              <h3 class="heading-medium"><a href="#">Initial teacher training registrations</a></h3>
+              <p class="text-supporting">Department for Education</p>
+            </div>
+          </div> 
+          <div class="grid-row"> 
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">102k</h3>
+                <p class="bold-xsmall">transactions</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">92%</h3>
+                <p class="bold-xsmall">transactions completed</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">66%</h3>
+                <p class="bold-xsmall">transactions online</p>
+              </div>
+            </div>
+          </div>  
+        </li>
+
+        <!-- a transaction -->
+        <li class="transaction-listing" data-dep="Home Office" data-topic="Childcare and parenting">
           <div class="grid-row">
             <div class="column-full">
               <h3 class="heading-medium"><a href="#">Order a copy of a birth, death or marriage certificate</a></h3>
@@ -234,7 +265,37 @@
         </li>
 
         <!-- a transaction -->
-        <li class="transaction-listing" data-dep="Department for Transport" data-topic="Driving">
+        <li class="transaction-listing" data-dep="Home Office" data-topic="Crime, justice and the law">
+          <div class="grid-row">
+            <div class="column-full">
+              <h3 class="heading-medium"><a href="#">Police complaints submitted</a></h3>
+              <p class="text-supporting">Home Office</p>
+            </div>
+          </div> 
+          <div class="grid-row"> 
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">287k</h3>
+                <p class="bold-xsmall">transactions</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">70%</h3>
+                <p class="bold-xsmall">transactions completed</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">0%</h3>
+                <p class="bold-xsmall">transactions online</p>
+              </div>
+            </div>
+          </div>  
+        </li>
+
+        <!-- a transaction -->
+        <li class="transaction-listing" data-dep="Department for Transport" data-agency="Driver and Vehicle Standards Agency DVSA" data-topic="Driving">
           <div class="grid-row">
             <div class="column-full">
               <h3 class="heading-medium"><a href="#">Practise your driving theory test</a></h3>
@@ -264,7 +325,7 @@
         </li>
 
         <!-- a transaction -->
-        <li class="transaction-listing" data-dep="Home Office" data-topic="Early years and childcare">
+        <li class="transaction-listing" data-dep="Home Office" data-topic="Childcare and parenting">
           <div class="grid-row">
             <div class="column-full">
               <h3 class="heading-medium"><a href="#">Register a birth</a></h3>
@@ -274,7 +335,7 @@
           <div class="grid-row"> 
             <div class="column-one-third">
               <div class="data">
-                <h3 class="bold-large">3.6k</h3>
+                <h3 class="bold-large">698k</h3>
                 <p class="bold-xsmall">transactions</p>
               </div>
             </div>
@@ -287,6 +348,36 @@
             <div class="column-one-third">
               <div class="data">
                 <h3 class="bold-large">80%</h3>
+                <p class="bold-xsmall">transactions online</p>
+              </div>
+            </div>
+          </div>  
+        </li>
+
+        <!-- a transaction -->
+        <li class="transaction-listing" data-dep="Department for Education" data-topic="Childcare and parenting">
+          <div class="grid-row">
+            <div class="column-full">
+              <h3 class="heading-medium"><a href="#">Registrations for train to teach events</a></h3>
+              <p class="text-supporting">Department for Education</p>
+            </div>
+          </div> 
+          <div class="grid-row"> 
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">102k</h3>
+                <p class="bold-xsmall">transactions</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">92%</h3>
+                <p class="bold-xsmall">transactions completed</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">66%</h3>
                 <p class="bold-xsmall">transactions online</p>
               </div>
             </div>
@@ -323,17 +414,40 @@
           </div>  
         </li>
 
-        
+        <!-- a transaction -->
+        <li class="transaction-listing" data-dep="Department for Transport" data-topic="Driving">
+          <div class="grid-row">
+            <div class="column-full">
+              <h3 class="heading-medium"><a href="/prototype-v0/grouping/transactions/tax-your-vehicle">Tax your vehicle</a></h3>
+              <p class="text-supporting">Department for Transport</p>
+            </div>
+          </div> 
+          <div class="grid-row"> 
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">46.9m</h3>
+                <p class="bold-xsmall">transactions</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">89%</h3>
+                <p class="bold-xsmall">transactions completed</p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="data">
+                <h3 class="bold-large">80%</h3>
+                <p class="bold-xsmall">transactions online</p>
+              </div>
+            </div>
+          </div>  
+        </li>
 
-        
 
       </ul>    
-
-
-      
       
     </div>
-
 
   </div>
 

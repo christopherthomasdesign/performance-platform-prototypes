@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 	refreshNumber();
 
-	$('.typeahead').bind('typeahead:select', function(ev, suggestion) {
+	$('.data-dep').bind('typeahead:select', function(ev, suggestion) {
 
 		// add a tag and filter the results accordingly
 
@@ -44,6 +44,57 @@ $(document).ready(function() {
 		$('.transaction-listing').each(
 		  function (i, tx) {
 		    if ( $.inArray($(tx).attr("data-dep"), values) != -1) { $(tx).show() } else { $(tx).hide() }
+		});
+		refreshNumber();
+
+	});
+
+
+	// add agency stuff
+
+	refreshNumber();
+
+	$('.data-agency').bind('typeahead:select', function(ev, suggestion) {
+
+		// add a tag and filter the results accordingly
+
+	 	var value = $(this).val();
+
+	 	$(".filter-tags").append("<li>"+value+"</li>");
+
+	 	$(".filter-tags li").click(function(){
+	  	$(this).remove();
+
+	  	var values = [];
+
+			$(".filter-tags li").each(function(i, el) { values.push($(el).attr("data-agency")) });
+
+			if (values.length == 0) {
+				$('.transaction-listing').show();
+			} else {
+	    	$('.transaction-listing').each(
+	  	  	function (i, tx) {
+		    		if ( $.inArray($(tx).attr("data-agency"), values) == -1) { $(tx).hide() }
+		    	});
+	    }
+	    refreshNumber();
+		});
+		refreshNumber();
+
+	 	// remove a tag and show things again
+
+	 	var valueSelected = $(".filter-tags li").text();
+
+	 	var last_tag = $(".filter-tags li").last();
+	 	$(last_tag).attr("data-agency", value);
+
+    var values = [];
+
+		$(".filter-tags li").each(function(i, el) { values.push($(el).attr("data-agency")) });
+
+		$('.transaction-listing').each(
+		  function (i, tx) {
+		    if ( $.inArray($(tx).attr("data-agency"), values) != -1) { $(tx).show() } else { $(tx).hide() }
 		});
 		refreshNumber();
 
