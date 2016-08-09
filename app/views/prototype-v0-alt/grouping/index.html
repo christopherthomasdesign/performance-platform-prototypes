@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-2.html" %}
 
 {% block page_title %}
   GOV.UK prototype kit
@@ -65,6 +65,102 @@
       </div> 
     </div>  
   </div>
+
+  
+  <!-- topics -->
+
+  <div class="grid-row" id="topics">
+
+    <div class="column-one-third">
+      <h3 class="heading-large">Topics</h3>
+      <p><a href="#">See all</a></p>
+    </div> 
+
+    <div class="column-two-thirds">
+      <h4 class="heading-small">Topics with most transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>50.3m</span> <a href="grouping/topics/driving">Driving</a></li>
+        <li><span>3.1m</span> <a href="grouping/topics/childcare-and-parenting">Childcare and parenting</a></li>
+        <li><span>24.6k</span> <a href="grouping/topics/boating">Boating</a></li>
+      </ul>
+      <br>
+      <h4 class="heading-small">Topics with the highest percentage of online transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>91%</span> <a href="grouping/topics/driving">Driving</a></li>
+        <li><span>69%</span> <a href="grouping/topics/childcare-and-parenting">Childcare and parenting</a></li>
+        <li><span>9%</span> <a href="grouping/topics/boating">Boating</a></li>
+      </ul>
+      <br>
+      <h4 class="heading-small">Topics with the highest percentage of offline transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>91%</span> <a href="grouping/topics/boating">Boating</a></li>
+        <li><span>31%</span> <a href="grouping/topics/childcare-and-parenting">Childcare and parenting</a></li>
+        <li><span>9%</span> <a href="grouping/topics/driving">Driving</a></li>
+      </ul>
+    </div> 
+ 
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <details>
+        <summary><span class="summary font-xsmall">How was this calculated?</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>This data is aggregated from all the individual transactions that make up this group.</p>
+        </div>
+      </details>
+    </div>
+  </div> 
+
+  <hr>
+
+  <!-- sub-topics -->
+
+  <div class="grid-row" id="sub-topics">
+
+    <div class="column-one-third">
+      <h3 class="heading-large">Sub-topics</h3>
+      <p><a href="#">See all</a></p>
+    </div> 
+
+    <div class="column-two-thirds">
+      <h4 class="heading-small">Sub-topics with most transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>354m</span> <a href="grouping/sub-topics/learn-to-drive">Learn to drive</a></li>
+        <li><span>200m</span> <a href="grouping/sub-topics/pregnancy-and-childbirth">Pregnancy and childbirth</a></li>
+        <li><span>132k</span> <a href="grouping/sub-topics/pay-tax-on-a-vehicle">Pay tax on a vehicle</a></li>
+      </ul>
+      <br>
+      <h4 class="heading-small">Sub-topics with the highest percentage of online transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>86%</span> <a href="grouping/sub-topics/learn-to-drive">Learn to drive</a></li>
+        <li><span>85%</span> <a href="grouping/sub-topics/pay-tax-on-a-vehicle">Pay tax on a vehicle</a></li>
+        <li><span>79%</span> <a href="grouping/sub-topics/pregnancy-and-childbirth">Pregnancy and childbirth</a></li>
+      </ul>
+      <br>
+      <h4 class="heading-small">Sub-topics with the highest percentage of offline transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>21%</span> <a href="grouping/sub-topics/pregnancy-and-childbirth">Pregnancy and childbirth</a></li>
+        <li><span>15%</span> <a href="grouping/sub-topics/pay-tax-on-a-vehicle">Pay tax on a vehicle</a></li>
+        <li><span>14%</span> <a href="grouping/sub-topics/learn-to-drive">Learn to drive</a></li>
+      </ul>
+    </div>  
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <details>
+        <summary><span class="summary font-xsmall">How was this calculated?</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>This data is aggregated from all the individual transactions that make up this group.</p>
+        </div>
+      </details>
+    </div>
+  </div> 
+
+  <hr>
 
   <!-- departments -->
 
@@ -160,100 +256,6 @@
 
   <hr>
 
-  <!-- topics -->
-
-  <div class="grid-row" id="topics">
-
-    <div class="column-one-third">
-      <h3 class="heading-large">Topics</h3>
-      <p><a href="#">See all</a></p>
-    </div> 
-
-    <div class="column-two-thirds">
-      <h4 class="heading-small">Topics with most transactions</h4>
-      <ul class="list trending-figures">
-        <li><span>50.3m</span> <a href="grouping/topics/driving">Driving</a></li>
-        <li><span>3.1m</span> <a href="grouping/topics/childcare-and-parenting">Childcare and parenting</a></li>
-        <li><span>24.6k</span> <a href="grouping/topics/boating">Boating</a></li>
-      </ul>
-      <br>
-      <h4 class="heading-small">Topics with the highest percentage of online transactions</h4>
-      <ul class="list trending-figures">
-        <li><span>91%</span> <a href="grouping/topics/driving">Driving</a></li>
-        <li><span>69%</span> <a href="grouping/topics/childcare-and-parenting">Childcare and parenting</a></li>
-        <li><span>9%</span> <a href="grouping/topics/boating">Boating</a></li>
-      </ul>
-      <br>
-      <h4 class="heading-small">Topics with the highest percentage of offline transactions</h4>
-      <ul class="list trending-figures">
-        <li><span>91%</span> <a href="grouping/topics/boating">Boating</a></li>
-        <li><span>31%</span> <a href="grouping/topics/childcare-and-parenting">Childcare and parenting</a></li>
-        <li><span>9%</span> <a href="grouping/topics/driving">Driving</a></li>
-      </ul>
-    </div> 
- 
-
-  </div>
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <details>
-        <summary><span class="summary font-xsmall">How was this calculated?</span></summary>
-        <div class="panel panel-border-narrow">
-          <p>This data is aggregated from all the individual transactions that make up this group.</p>
-        </div>
-      </details>
-    </div>
-  </div> 
-
-  <hr>
-
-  <!-- sub-topics -->
-
-  <div class="grid-row" id="sub-topics">
-
-    <div class="column-one-third">
-      <h3 class="heading-large">Sub-topics</h3>
-      <p><a href="#">See all</a></p>
-    </div> 
-
-    <div class="column-two-thirds">
-      <h4 class="heading-small">Sub-topics with most transactions</h4>
-      <ul class="list trending-figures">
-        <li><span>354m</span> <a href="grouping/sub-topics/learn-to-drive">Learn to drive</a></li>
-        <li><span>200m</span> <a href="grouping/sub-topics/pregnancy-and-childbirth">Pregnancy and childbirth</a></li>
-        <li><span>132k</span> <a href="grouping/sub-topics/pay-tax-on-a-vehicle">Pay tax on a vehicle</a></li>
-      </ul>
-      <br>
-      <h4 class="heading-small">Sub-topics with the highest percentage of online transactions</h4>
-      <ul class="list trending-figures">
-        <li><span>86%</span> <a href="grouping/sub-topics/learn-to-drive">Learn to drive</a></li>
-        <li><span>85%</span> <a href="grouping/sub-topics/pay-tax-on-a-vehicle">Pay tax on a vehicle</a></li>
-        <li><span>79%</span> <a href="grouping/sub-topics/pregnancy-and-childbirth">Pregnancy and childbirth</a></li>
-      </ul>
-      <br>
-      <h4 class="heading-small">Sub-topics with the highest percentage of offline transactions</h4>
-      <ul class="list trending-figures">
-        <li><span>21%</span> <a href="grouping/sub-topics/pregnancy-and-childbirth">Pregnancy and childbirth</a></li>
-        <li><span>15%</span> <a href="grouping/sub-topics/pay-tax-on-a-vehicle">Pay tax on a vehicle</a></li>
-        <li><span>14%</span> <a href="grouping/sub-topics/learn-to-drive">Learn to drive</a></li>
-      </ul>
-    </div>  
-
-  </div>
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <details>
-        <summary><span class="summary font-xsmall">How was this calculated?</span></summary>
-        <div class="panel panel-border-narrow">
-          <p>This data is aggregated from all the individual transactions that make up this group.</p>
-        </div>
-      </details>
-    </div>
-  </div> 
-
-  <hr>
 
   <!-- transactions -->
 

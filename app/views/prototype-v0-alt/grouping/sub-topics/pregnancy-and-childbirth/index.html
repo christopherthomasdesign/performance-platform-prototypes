@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-2.html" %}
 
 {% block page_title %}
   GOV.UK prototype kit
@@ -12,7 +12,7 @@
     <div class="column-two-thirds">
       <h1 class="heading-xlarge">
       	<span class="heading-secondary">Performance data for</span>
-      	Driver and vehicle licensing agency (DVLA)
+      	Pregnancy and childbirth
       </h1>
     </div>
     <div class="column-third">
@@ -47,21 +47,21 @@
     <div class="column-full">
       <div class="column-one-third data-box">
         <div class="data">
-          <h2 class="bold-xlarge">36</h2>
+          <h2 class="bold-xlarge">9</h2>
           <p class="bold-xsmall">services
           <br><a href="#service-list">See all</a></p>
         </div>
       </div>
       <div class="column-one-third data-box">
         <div class="data">
-          <h2 class="bold-xlarge">309m</h2>
+          <h2 class="bold-xlarge">1.8m</h2>
           <p class="bold-xsmall">transactions
           <br><a href="#transactions">More info</a></p>
         </div>
       </div> 
       <div class="column-one-third data-box">
         <div class="data">
-          <h2 class="bold-xlarge">88%</h2>
+          <h2 class="bold-xlarge">28%</h2>
           <p class="bold-xsmall">transactions online
           <br><a href="#channel-breakdown">More info</a></p>
         </div>
@@ -75,7 +75,7 @@
 
     <div class="column-one-third">
       <div class="data">
-        <h2 class="bold-xxlarge">309m</h2>
+        <h2 class="bold-xxlarge">1.8m</h2>
         <p class="bold-medium">transactions</p>
       </div>
     </div>  
@@ -83,17 +83,20 @@
     <div class="column-two-thirds">
       <h4 class="heading-small">Services with the most transactions</h4>
       <ul class="list trending-figures">
-        <li><span>46.9m</span> <a href="../transactions/tax-your-vehicle">Tax your vehicle</a></li>
-        <li><span>1.2m</span> <a href="../transactions/apply-for-a-provisional-driving-license">Apply for a provisional driving license</a></li>
-        <li><span>987k</span> <a href="#">Vehicle tax checks by individuals</a></li>
+        <li><span>698k</span> <a href="#">Register a birth</a></li>
+        <li><span>300k</span> <a href="#">Maternity allowance claim form</a></li>
+        <li><span>58,012</span> <a href="#">Application for Healthy Start vouchers</a></li>
+        <li><span>56,824</span> <a href="#">Register a birth abroad</a></li>
+        <li><span>49,001</span> <a href="#">Apply to foster a child through your council</a></li>
       </ul> 
       <br>
 
       <h4 class="heading-small">Services with the least transactions</h4>
       <ul class="list trending-figures">
-        <li><span>0</span> <a href="#">Replace tax disc</a></li>
-        <li><span>0</span> <a href="#">Fleet licence registrations and amendments</a></li>
-        <li><span>0</span> <a href="#">Amend trade licence</a></li>
+        <li><span>1,000</span> <a href="#">Appeal to the Social Security and Child Support Tribunal</a></li>
+        <li><span>3,421</span> <a href="#">Register a stillbirth</a></li>
+        <li><span>12,198</span> <a href="#">Order a copy of a birth, death or marriage certificate</a></li>
+        <li><span>48,488</span> <a href="#">Sure start maternity claim form</a></li>
       </ul>
     </div> 
 
@@ -118,31 +121,34 @@
 
     <div class="column-one-third">
       <div class="data">
-        <h2 class="bold-xxlarge">88%</h2>
-        <p class="bold-medium">transactions online</p>
+        <h2 class="bold-xxlarge">32%</h2>
+        <p class="bold-medium">transactions by paper</p>
       </div>  
       <!-- <p class="lede"><span class="data-increase-arrow">&#9650;</span> +1.2% increase</p> -->
       <div class="data breakdown">
-         <h3 class="bold-large">22% <span class="lede">paper</span></h3>
-        <h3 class="bold-large">4% <span class="lede">phone</span></h3>
-        <h3 class="bold-large">3% <span class="lede">face-to-face</span></h3>
-        <h3 class="bold-large">1% <span class="lede">other</span></h3>
+        <h3 class="bold-large">28% <span class="lede">online</span></h3>
+        <h3 class="bold-large">21% <span class="lede">face-to-face</span></h3>
+        <h3 class="bold-large">19% <span class="lede">other</span></h3>
+        <h3 class="bold-large">10% <span class="lede">phone</span></h3>
       </div>
     </div>  
 
     <div class="column-two-thirds">
       <h4 class="heading-small">Services with the highest percentage of online transactions</h4>
       <ul class="list trending-figures">
-        <li><span>98%</span> <a href="../transactions/apply-for-a-provisional-driving-license">Apply for a provisional driving license</a></li>
-        <li><span>93%</span> <a href="#">Vehicle tax checks by individuals</a></li>
-        <li><span>89%</span> <a href="#">Vehicle tax renewals</a></li>
+        <li><span>50%</span> <a href="#">Order a copy of a birth, death or marriage certificate</a></li>
+        <li><span>36%</span> <a href="#">Application for Healthy Start vouchers</a></li>
+        <li><span>32%</span> <a href="#">Appeal to the Social Security and Child Support Tribunal</a></li>
+        <li><span>29%</span> <a href="#">Sure start maternity claim form</a></li>
+        <li><span>28%</span> <a href="#">Apply to foster a child through your council</a></li>
       </ul>
       <br>
       <h4 class="heading-small">Services with the highest percentage of offline transactions</h4>
       <ul class="list trending-figures">
-        <li><span>100%</span> <a href="#">Replace a tax disc</a></li>
-        <li><span>95%</span> <a href="#">Report death of driver</a></li>
-        <li><span>89%</span> <a href="#">Report change in circumstance</a></li>
+        <li><span>95%</span> <a href="../transactions/register-a-birth">Register a birth</a></li>
+        <li><span>86%</span> <a href="#">Register a birth abroad</a></li>
+        <li><span>54%</span> <a href="#">Apply to foster a child through your council</a></li>
+        <li><span>53%</span> <a href="#">Register a stillbirth</a></li>
       </ul>
     </div> 
 
@@ -169,45 +175,22 @@
 
     <div class="column-one-third">
       <div class="data">
-        <h2 class="bold-xxlarge">36</h2>
+        <h2 class="bold-xxlarge">9</h2>
         <p class="bold-medium">services</p>
       </div>
     </div> 
 
     <div class="column-two-thirds">
       <ul class="list">
-        <li><a href="#">Apply for a provisional driving license</a></li>
-        <li><a href="#">Replace a tax disc</a></li>
-        <li><a href="#">Report death of driver</a></li>
-        <li><a href="#">Report change in circumstance</a></li>
-        <li><a href="#">Vehicle tax checks by individuals</a></li>
-        <li><a href="#">Vehicle tax renewals</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
-        <li><a href="#">Name of service</a></li>
+        <li><a href="#">Sure start maternity claim form</a></li>
+        <li><a href="#">Register a birth</a></li>
+        <li><a href="#">Order a copy of a birth, death or marriage certificate</a></li>
+        <li><a href="#">Apply to foster a child through your council</a></li>
+        <li><a href="#">Maternity allowance claim form</a></li>
+        <li><a href="#">Application for Healthy Start vouchers</a></li>
+        <li><a href="#">Register a birth abroad</a></li>
+        <li><a href="#">Register a stillbirth</a></li>
+        <li><a href="#">Appeal to the Social Security and Child Support Tribunal</a></li>
       </ul>
     </div>  
 
