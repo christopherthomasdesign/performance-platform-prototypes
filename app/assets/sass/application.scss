@@ -46,6 +46,11 @@
   display: block;
 }
 
+.column-all {
+  width: 100%;
+  padding: 0 15px;
+  display: block;
+}
 
 // Header banner (feel like this class should already exist somewhere else)
 
@@ -391,4 +396,39 @@ margin:-30px 0 0;
 #bar-chart-value-6-1 { height: 10%; }
 #bar-chart-value-6-2 { height: 8%; }
 
+// Changelog stuff
 
+.changelog {
+  border-left: 6px solid $black;
+  padding-left: 45px;
+}
+
+.changelog-item {
+  margin-bottom: 90px
+}
+
+.changelog-item:before {
+  content: '';
+  height: 6px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background-color: $black;
+  margin: 45px -63px;
+}
+
+.changelog-item:first-of-type:before {
+  height: 30px;
+  border-radius: 15px;
+  margin: -5px -63px;
+}
+
+.changelog-date {
+  @include core-16;
+  color: $secondary-text-colour;
+  margin-bottom: 0;
+}
+
+.changelog-name {
+  margin: 15px 0;
+}
