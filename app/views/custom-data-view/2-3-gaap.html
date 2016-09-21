@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block page_banner %}
+    {% include "../includes/banner_prototype.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="start-page">Back</a>
+
+      <h1 class="heading-large">
+        Which Government as a Platform products do you want to see data for?
+      </h1>
+
+      <p>
+        Select all options that are relevant to you.
+      </p>
+
+      <form class="form">
+
+        <fieldset class="form-group">
+
+          <legend class="visuallyhidden">Which Government as a Platform products do you want to see data for?</legend>
+
+          <label for="gaap_notify" class="block-label selection-button-checkbox">
+            <input type="checkbox" name="gaap_notify" value="Notify" id="gaap_notify">
+            Notify
+          </label>
+
+          <label for="gaap_pay" class="block-label selection-button-checkbox">
+            <input type="checkbox" name="gaap_pay" value="Pay" id="gaap_pay">
+            Pay
+          </label>
+
+          <label for="gaap_verify" class="block-label selection-button-checkbox">
+            <input type="checkbox" name="gaap_verify" value="Verify" id="gaap_verify">
+            Verify
+          </label>            
+
+        </fieldset> 
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

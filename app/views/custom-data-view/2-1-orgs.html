@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block page_banner %}
+    {% include "../includes/banner_prototype.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="1-interests">Back</a>
+
+      <h1 class="heading-large">
+        Which organisations are you interested in?
+      </h1>
+
+      <p>
+        Add as many as you like, or <a href="#">add data for all organisations</a>.
+      </p>
+
+      <form class="form">
+
+        <fieldset class="form-group">
+
+            <div class="form-group">
+              <div class="test-case" style="overflow: visible">
+                <div>
+                  <select id="organisation" class="tags typeahead js-hidden form-control-2-3" name="organisation" aria-required="true">
+                    <option value=""></option>
+                    <option value="Department for Education">Department for Education</option>
+                    <option value="Department for Transport">Department for Transport</option>
+                    <option value="Driver and Vehicle Licensing Agency DVLA">Driver and Vehicle Licensing Agency DVLA</option>
+                    <option value="HM Revenue &amp; Customs">HM Revenue &amp; Customs</option>
+                    <option value="Home Office">Home Office</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <ul class="filter-tags">
+              <!-- tags generated in jquery when a filter is selected -->
+            </ul>
+
+          </fieldset>
+
+          <div class="form-group">
+            <input class="button" type="submit" value="Continue">
+          </div>   
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+{% block body_end %}
+{{ super() }}
+  <script src="/public/javascripts/patterns/autocomplete/03/typeahead-aria.js"></script>
+  <script src="/public/javascripts/patterns/autocomplete/03/init-autocomplete.js"></script>
+  <script src="/public/javascripts/custom-view-tags.js"></script>
+{% endblock %}

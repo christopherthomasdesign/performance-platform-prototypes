@@ -40,33 +40,53 @@
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
-.column-full {
-  width: 100%;
-  padding: 0 15px 30px;
-  display: block;
-}
+// .column-full {
+//   width: 100%;
+//   padding: 0 15px 30px;
+//   display: block;
+// }
 
-.column-all {
-  width: 100%;
-  padding: 0 15px;
-  display: block;
-}
 
-// Header banner (feel like this class should already exist somewhere else)
+// Header banner (this pattern probably already exists somewhere else but meh)
 
 .header-banner {
+  @include core-19;
   color: $white;
   background-color: $govuk-blue;
   width: 100%;
   margin-top: -10px;
+  padding-bottom: 60px;
 
   div {
     max-width: 990px;
     margin: 0 auto;
   }
 
+  h1 {
+    margin: 15px 0 60px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
   a {
     color: $white;
+  }
+
+  a:hover {
+    color: #d5e8f3;
+  }
+
+  .phase-banner-alpha {
+    color: #fff;
+    border-bottom: none;
+    padding-left: 30px;
+
+    p {
+      color: $white;
+    }
+
   }
 
 }
@@ -113,14 +133,12 @@
   padding: 0 30px 30px 15px;
 }
 
-.filter-tags {
-  @include core-16; 
+.filter-tags { 
   display: block;
-  margin-bottom: 15px;
 
   li {
     display: inline-block;
-    margin: 0 5px 5px 0;
+    margin: 0 10px 10px 0;
     background-color: $panel-colour;
     display: inline-block;
     padding: 10px;
@@ -137,7 +155,7 @@
     background-size: 20px;
     background-repeat: none;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 15px;
     }
 
     li:hover {
@@ -161,7 +179,7 @@
 
 .text-supporting {
   @include core-16;
-  margin: -15px 0 0;
+  margin: -15px 0 30px;
   color: $secondary-text-colour;
 }
 
@@ -175,7 +193,7 @@
 
 .data-summary {
   margin-top: -30px;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 
 .data-box {
@@ -183,19 +201,61 @@
   background-color: $govuk-blue;
   padding: 25px 25px 10px;
   border: 2.5px solid $white;
+  min-height: 180px;
 
   a {
     color: $white;
   }
 
+  p {
+    margin-bottom: 5px;
+  }
+
 }
 
-// Colours for arrows
+.data-box-alt {
+  color: $white!important;
+  background-color: $govuk-blue;
+  padding: 25px 25px 10px;
+  border: 2.5px solid $white;
+  min-height: 190px;
+  text-decoration: none;
+  margin-bottom: 30px;
+
+  p {
+    text-decoration: underline;
+  }
+
+}
+
+.data-box-alt:hover {
+  color: #d5e8f3!important;
+}
+
+// Summary title text used at end of custom view process
+
+.heading-summary {
+  font-weight: 300;
+  margin-bottom: 45px;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: $govuk-blue;
+  }
+
+}
+
+// Colours for arrows and warning text
 
 .data-increase-arrow { color: $button-colour; }
-.data-decrease-arrow { color: $mellow-red; }
+.data-decrease-arrow, .warning-text { color: $mellow-red; }
+.data-neutral-arrow, .grey-text { color: $secondary-text-colour; }
 
-// Add 30px spacing at top of anchor links
+// Add 30px spacing at top when jumping to anchor links
 
 :target:before {
 content:"";
@@ -215,9 +275,24 @@ margin:-30px 0 0;
       min-width: 65px; 
       text-align: right;
       margin-right: 5px;
-      @include core-19($tabular-numbers: true);
+      
     }
 
+  }
+
+}
+
+// Attempt at doing the above using a table
+
+.trend-table {
+
+  th, td {
+    border-bottom: none;  
+  }
+
+  .numeric {
+    @include core-19($tabular-numbers: true);
+    padding-right: 10px;
   }
 
 }
@@ -374,61 +449,27 @@ margin:-30px 0 0;
 
 }
 
-#bar-chart-value-1 { height: 70%; }
-#bar-chart-value-1-1 { height: 15%; }
-#bar-chart-value-1-2 { height: 10%; }
+// light grey bar chart background (taken from Notify dashboard 'spark-bar' pattern)
 
-#bar-chart-value-2 { height: 80%; }
-#bar-chart-value-2-1 { height: 10%; }
-#bar-chart-value-2-2 { height: 10%; }
+.spark-bar {
 
-#bar-chart-value-3 { height: 90%; }
-
-#bar-chart-value-4 { height: 95%; }
-#bar-chart-value-4-1 { height: 10%; }
-#bar-chart-value-4-2 { height: 7%; }
-
-#bar-chart-value-5 { height: 80%; }
-#bar-chart-value-5-1 { height: 8%; }
-#bar-chart-value-5-2 { height: 5%; }
-
-#bar-chart-value-6 { height: 100%; }
-#bar-chart-value-6-1 { height: 10%; }
-#bar-chart-value-6-2 { height: 8%; }
-
-// Changelog stuff
-
-.changelog {
-  border-left: 6px solid $black;
-  padding-left: 45px;
-}
-
-.changelog-item {
-  margin-bottom: 90px
-}
-
-.changelog-item:before {
-  content: '';
-  height: 6px;
-  width: 30px;
-  position: absolute;
-  display: block;
-  background-color: $black;
-  margin: 45px -63px;
-}
-
-.changelog-item:first-of-type:before {
-  height: 30px;
-  border-radius: 15px;
-  margin: -5px -63px;
-}
-
-.changelog-date {
   @include core-16;
-  color: $secondary-text-colour;
-  margin-bottom: 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-bottom: $gutter-half;
+  height: $gutter-half;
+  color: $text-colour;
+
+  span {
+   box-sizing: border-box;
+   display: inline-block;
+   overflow: visible;
+   background: $panel-colour;
+   color: $black;
+   padding: 5px 5px 2px 5px;
+   margin: 3px 0 5px 0;
+  }
+
 }
 
-.changelog-name {
-  margin: 15px 0;
-}

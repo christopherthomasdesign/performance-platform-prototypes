@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+  {% block page_banner %}
+    {% include "../includes/banner_prototype.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Create a custom view of service data
+      </h1>
+
+      <p>Tell us which aspects of government you're interested in to get an aggregated view of service data. You can choose to receive a quarterly email to keep updated on the progress of your chosen areas.</p>
+
+      <p>This should take less than 5 minutes.</p>
+
+      <p>
+        <a class="button button-start" href="1-interests" role="button">Start now</a>
+      </p>
+
+    </div>
+    <div class="column-third">
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block page_banner %}
+    {% include "../includes/banner_prototype.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="start-page">Back</a>
+
+      <h1 class="heading-large">
+        What do you want to see data about?
+      </h1>
+
+      <p>
+        Select all options that are relevant to you.
+      </p>
+
+      <form class="form">
+
+        <fieldset class="form-group">
+
+          <legend class="visuallyhidden">What do you want to see data about?</legend>
+
+          <label for="data_transactions" class="block-label selection-button-checkbox">
+            <input type="checkbox" name="data_transactions" value="Notify" id="data_transactions">
+            <span class="heading-small">Transactions</span><br>
+            The overall number of transactions processed by services
+          </label>
+
+          <label for="data_channels" class="block-label selection-button-checkbox">
+            <input type="checkbox" name="data_channels" value="Pay" id="data_channels">
+            <span class="heading-small">Channel breakdown</span><br>
+            The channels through which services receive users' information
+          </label>
+
+          <label for="data_usereffort" class="block-label selection-button-checkbox">
+            <input type="checkbox" name="data_usereffort" value="Verify" id="data_usereffort">
+            <span class="heading-small">User effort</span><br>
+            Reasons users have to get in touch with a service for extra information or help
+          </label>            
+
+        </fieldset> 
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

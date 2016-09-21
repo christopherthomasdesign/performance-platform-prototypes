@@ -7,16 +7,7 @@ router.get('/', function (req, res) {
 
 });
 
-
 // Example routes - feel free to delete these
-
-// Passing data into a page
-
-router.get('/examples/template-data', function (req, res) {
-
-  res.render('examples/template-data', { 'name' : 'Foo' });
-
-});
 
 // Branching
 

@@ -7,34 +7,180 @@
 {% block content %}
 
 <div class="header-banner">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag" style="background-color: rgb(11, 12, 12)">PROTOTYPE</strong>
+      <span>This is a prototype, not a live service</span>
+    </p>
+  </div>
+
   <div class="grid-row">
     <div class="column-two-thirds">
       <h1 class="heading-xlarge">
-         Check how government services are working
+         Check how government services are doing
       </h1>
+      <p>
+        View data on government service activity &mdash; how people are accessing services, how many transactions are happening, and the ways services may be creating extra effort for their users.
+      </p>
     </div>
   </div>
-</div>
-
-<main id="content" role="main">
 
   <div class="grid-row">
     <div class="column-one-third">
       <h3 class="heading-medium"><a href="/grouping">View summary</a></h3>
     </div>
     <div class="column-one-third">
-      <h3 class="heading-medium"><a href="/custom-grouping">Compare services</a></h3>
+      <h3 class="heading-medium"><a href="#">Custom data view</a></h3>
+    </div>
+    <div class="column-one-third">
+      <h3 class="heading-medium"><a href="#">Search</a></h3>
+    </div>
+  </div>
+
+</div>
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-large">Latest activity</h2>
     </div>
   </div>
 
   <hr>
 
   <div class="grid-row">
+    <div class="column-one-third">
+      <div class="data">
+        <h2 class="bold-xxlarge">5</h2>
+        <p class="bold-medium">digital services went live</p>
+      </div>
+    </div>
     <div class="column-two-thirds">
-      <h3 class="heading-medium">What’s changed?</h3>
-      <p>Check how government services are working is replacing the Performance Platform. Its purpose is to give government the data to make better decisions about services but all data will remain open to the public.</p>
+      <table class="trend-table">
+        <tbody>
+          <tr>
+            <td>
+              <a href="">Appeal a council tax valuation</a>
+              <br><span class="font-xsmall grey-text">Home Office</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="">Book a prison visit</a>
+              <br><span class="font-xsmall grey-text">Ministry of Justice</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="">Replace a driving license</a>
+              <br><span class="font-xsmall grey-text">Department for Transport</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="">Renew a trademark</a>
+              <br><span class="font-xsmall grey-text">Department for Business, Energy and Industrial Strategy</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="">Apply for a European Patent</a>
+              <br><span class="font-xsmall grey-text">Department for Business, Energy and Industrial Strategy</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
+
+  <hr>    
+
+
+  <div class="grid-row">
+    <div class="column-one-third">
+      <h3 class="bold-medium">Biggest changes to transaction numbers</h3>
+      <br>
+      <p class="font-xsmall">View by<br>
+      <a href="#" id="selected">Department</a><br>
+      <a href="#">Agency</a><br>
+      <a href="#">Service</a><br>
+      <a href="#">Task</a><br></p>
+    </div>
+
+    <div class="column-two-thirds">
+      <table class="trend-table">
+        <tbody>
+          <tr>
+            <td class="numeric">&plus; 22,897 <span class="data-increase-arrow">&#9650;</span></td>
+            <td><a href="">Department for Transport</a></td>
+          </tr>
+          <tr>
+            <td class="numeric">&minus; 18,002 <span class="data-decrease-arrow">&#9660;</span></td>
+            <td><a href="">Home Office</a></td>
+          </tr>
+          <tr>
+            <td class="numeric">&minus; 9,077 <span class="data-decrease-arrow">&#9660;</span></td>
+            <td><a href="">Ministry of Justice</a></td>
+          </tr>
+          <tr>
+            <td class="numeric">&plus; 8,987 <span class="data-increase-arrow">&#9650;</span></td>
+            <td><a href="">Department for Business, Energy and Industrial Strategy</a></td>
+          </tr>
+          <tr>
+            <td class="numeric">&plus; 8,421 <span class="data-increase-arrow">&#9650;</span></td>
+            <td><a href="">Department for Work and Pensions</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  
+      
+  </div>
+
+  <hr>
+
+  <div class="grid-row">
+    <div class="column-one-third">
+      <h3 class="bold-medium">Biggest channel shifts</h3>
+      <br>
+      <p class="font-xsmall">View by<br>
+      <a href="#" id="selected">Department</a><br>
+      <a href="#">Agency</a><br>
+      <a href="#">Service</a><br>
+      <a href="#">Task</a><br></p>
+    </div>
+
+    <div class="column-two-thirds">
+      <table class="trend-table">
+        <tbody>
+          <tr>
+            <td class="numeric">&plus; 30% <span class="data-increase-arrow">&#9650;</span></td>
+            <td><a href="">Department for Education</a> shift to online</td>
+          </tr>
+          <tr>
+            <td class="numeric">&plus; 28% <span class="data-increase-arrow">&#9650;</span></td>
+            <td><a href="">HM Revenue &amp; Customs</a> shift to online</td>
+          </tr>
+          <tr>
+            <td class="numeric">&minus; 21% <span class="data-decrease-arrow">&#9660;</span></td>
+            <td><a href="">Ministry of Justice</a> shift from paper</td>
+          </tr>
+          <tr>
+            <td class="numeric">&plus; 19% <span class="data-increase-arrow">&#9650;</span></td>
+            <td><a href="">Department of Health</a> shift to phone</td>
+          </tr>
+          <tr>
+            <td class="numeric">&plus; 18% <span class="data-increase-arrow">&#9650;</span></td>
+            <td><a href="">Department for Work and Pensions</a> shift to online</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  
+      
+  </div>
+
+  <hr>
 
 </main>
 

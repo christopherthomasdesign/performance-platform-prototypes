@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="start-page">Back</a>
+
+      <h1 class="heading-large">
+        Would you like to be informed about these things on an ongoing basis?
+      </h1>
+
+      <form class="form">
+
+        <fieldset>
+
+          <legend class="visuallyhidden">Would you like to receive quarterly updates about this data by email?</legend>
+
+          <label for="radio-part-1" class="block-label" data-target="enter-email">
+            <input id="radio-part-1" type="radio" name="email-me" value="Part 1">
+            Yes
+          </label>
+
+          <div class="panel panel-border-narrow js-hidden" id="enter-email">
+            <label for="email-me" class="form-label">
+              Enter email
+            </label>
+            <input class="form-control" type="text" id="enter-email">
+          </div> 
+
+          <label for="radio-part-2" class="block-label">
+            <input id="radio-part-2" type="radio" name="email-me" value="Part 2">
+            No
+          </label>       
+
+          <div class="form-group">
+            <input class="button" type="submit" value="Continue">
+          </div>
+
+        </fieldset> 
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

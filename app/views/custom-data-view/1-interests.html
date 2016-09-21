@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block page_banner %}
+    {% include "../includes/banner_prototype.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="index.html">Back</a>
+
+      <h1 class="heading-large">
+        What aspects of government services are you interested in?
+      </h1>
+
+      <p>
+        Select all options that are relevant to you.
+      </p>
+
+      <form class="form">
+
+        <fieldset class="form-group">
+
+            <legend class="visuallyhidden">What aspects of government services are you interested in?</legend>
+
+            <label for="interest_departments" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="interest_departments" value="Departments" id="interest_departments">
+              <span class="heading-small">Organisations</span><br>
+              Departments, agencies and other public bodies.
+            </label>
+
+            <!-- <label for="interest_themes" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="interest_themes" value="Themes" id="interest_themes">
+              <span class="heading-small">Themes</span><br>
+              Broad themes in government, such as childcare or immigration.
+            </label> -->
+
+            <label for="interest_services" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="interest_services" value="Services" id="interest_services">
+              <span class="heading-small">Services</span><br>
+              Specific services, such as Learn to drive or Become a childminder.
+            </label>
+
+            <label for="interest_tasks" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="interest_tasks" value="Tasks" id="interest_tasks">
+              <span class="heading-small">Tasks</span><br>
+              Specific tasks within services, such as Apply for a provisional driving license.
+            </label>
+
+            <label for="interest_gaap" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="interest_gaap" value="Government as a Platform" id="interest_gaap">
+              <span class="heading-small">Government as a Platform</span><br>
+              The shared technology upon which many digital services are built.
+            </label>
+
+          </fieldset>
+
+          <div class="form-group">
+            <input class="button" type="submit" value="Continue">
+          </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

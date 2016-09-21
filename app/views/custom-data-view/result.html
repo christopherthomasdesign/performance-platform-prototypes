@@ -1,0 +1,353 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block page_banner %}
+    {% include "../includes/banner_prototype.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large heading-summary">
+        <span class="heading-secondary">Performance data for</span>
+      	<a href="2-1-orgs">4 departments</a> and <a href="2-3-gaap">3 Government as a Platform products</a>, showing <a href="3-data-type">number of transactions</a>, <a href="3-data-type">channel breakdown</a> and <a href="3-data-type">user effort</a>.</span>
+      </h1>
+    </div>
+    <div class="column-third">
+      <!-- <br><br><br>
+      <div class="notice">
+        <i class="icon icon-file-download">
+          <span class="visuallyhidden">Download file</span>
+        </i>
+        <strong class="bold-small">
+          <a href="#">Download data (CSV, 10KB)</a>
+        </strong>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- summary -->
+
+  <div class="grid-row data-summary">
+    <div class="column-full">
+      
+      <a href="#transactions" class="column-one-quarter data-box-alt">
+        <div class="data">
+          <h2 class="bold-xlarge">367k</h2>
+          <p>transactions</p>
+        </div> 
+      </a>
+
+      <a href="#channel-breakdown" class="column-one-quarter data-box-alt">
+        <div class="data">
+          <h2 class="bold-xlarge">72%</h2>
+          <p>of transactions start online</p>
+        </div>
+      </a>
+
+      <a href="#user-effort" class="column-one-quarter data-box-alt">
+        <div class="data">
+          <h2 class="bold-xlarge">36%</h2>
+          <p>of users contact needing more information</p>
+        </div>
+      </a>
+
+      <a href="#gaap" class="column-one-quarter data-box-alt">
+        <div class="data">
+          <h2 class="bold-xlarge">3 <span class="bold-medium">of 27</span></h2>
+          <p>services use Government as a Platform</p>
+        </div>
+      </a>
+      
+    </div>    
+  </div>
+
+  <!-- transactions info -->
+
+  <div class="grid-row" id="transactions">
+
+    <div class="column-full">
+      <h3 class="bold-large">Transactions</h3>
+      <p>The total number of transactions received.</p>
+    </div>
+
+    <div class="column-one-third">
+      <div class="data">
+        <h2 class="bold-xxlarge">367k</h2>
+        <p class="bold-medium visuallyhidden">transactions</p>
+        <p class="data-neutral-arrow">&#9650; +8% since Jun 2015</p>
+      </div>
+    </div>  
+
+    <div class="column-two-thirds">
+      <h4 class="bold-small">Departments with the most transactions</h4>
+      <ul class="list trending-figures">
+        <li><span>201k</span> <a href="../transactions/tax-your-vehicle">Department for Work and Pensions</a></li>
+        <li><span>56.2k</span> <a href="../transactions/apply-for-a-provisional-driving-license">Apply for a provisional driving license</a></li>
+        <li><span>12.7k</span> <a href="#">Vehicle tax checks by individuals</a></li>
+        <li class="bold-xsmall"><span></span> <a href="#">View all</a></li>
+      </ul> 
+    </div>
+
+  </div>
+
+  <hr>
+
+  <!-- channel breakdown - need to change service data to be a table layout so numbers can align correctly -->
+
+  <div class="grid-row" id="channel-breakdown">
+
+    <div class="column-full">
+      <h3 class="bold-large">Channel breakdown</h3>
+      <p>The ways that services receive users' information.</p>
+    </div>
+
+    <div class="column-one-third">
+      <div class="data">
+        <h2 class="bold-xlarge">65%</h2>
+        <p class="bold-small">online</p>
+        <p class="font-xsmall text-supporting"><span class="data-neutral-arrow">&#9650;</span>+10% since Jun 2015</p>
+      </div>
+    </div> 
+    <div class="column-one-third"> 
+      <div class="data">
+        <h2 class="bold-xlarge">19%</h2>
+        <p class="bold-small">phone</p>
+        <p class="font-xsmall text-supporting"><span class="data-neutral-arrow">&#9660;</span>–5% since Jun 2015</p>
+      </div>
+    </div> 
+    <div class="column-one-third"> 
+      <div class="data">
+        <h2 class="bold-xlarge">8%</h2>
+        <p class="bold-small">paper</p>
+        <p class="font-xsmall text-supporting"><span class="data-neutral-arrow">&#9660;</span>–5% since Jun 2015</p>
+      </div>
+    </div>  
+  </div> 
+
+  <hr>
+
+  <!-- User effort -->
+
+  <div class="grid-row" id="user-effort">
+    
+    <div class="column-two-thirds">
+      <h3 class="bold-large">User effort</h3>
+      <p>Reasons services may be creating extra effort for their users. <a href="/user-effort/glossary">Read more about what this means</a>.</p>
+    </div>
+
+
+    <div class="column-two-thirds">
+      <h3 class="heading-medium">Reasons users get in touch</h3>
+      <p class="font-xsmall text-supporting">Based on a sample of 1,000 calls and 200 emails</p>
+    </div>  
+
+    <div class="column-full">   
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>I need to check the status of something</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 65%">
+             <h4 class="bold-medium">65%</h4>
+             </span>
+           </span>
+        </div>  
+      </div> 
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>I need more information on what to do</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 19%">
+              <h4 class="bold-medium">19%</h4>
+             </span>
+           </span>
+        </div>  
+      </div> 
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>I think you've made an error</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 8%">
+              <h4 class="bold-medium">8%</h4>
+             </span>
+           </span>
+        </div>  
+      </div>
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>My situation has changed</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 4%">
+              <h4 class="bold-medium">4%</h4>
+             </span>
+           </span>
+        </div>  
+      </div>
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>I have difficulty using a computer</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 3%">
+              <h4 class="bold-medium">3%</h4>
+             </span>
+           </span>
+        </div>  
+      </div>
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>Someone told me to contact you</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 1%">
+              <h4 class="bold-medium">1%</h4>
+             </span>
+           </span>
+        </div>  
+      </div>
+
+    </div>  
+
+    <div class="column-full"> 
+
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <h3 class="heading-medium">Reasons users have to repeat or amend something</h3>
+          <p class="font-xsmall text-supporting warning-text">Based on a range of sampling methods so numbers are indicative</p>
+        </div> 
+      </div> 
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>I followed the process incorrectly</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 37%">
+             <h4 class="bold-medium">37%</h4>
+             </span>
+           </span>
+        </div>  
+      </div>
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>I followed the wrong process</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 31%">
+             <h4 class="bold-medium">31%</h4>
+             </span>
+           </span>
+        </div>  
+      </div> 
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>The information I sent was illegible</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 21%">
+             <h4 class="bold-medium">21%</h4>
+             </span>
+           </span>
+        </div>  
+      </div> 
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>Government made an error</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 10%">
+             <h4 class="bold-medium">10%</h4>
+             </span>
+           </span>
+        </div>  
+      </div> 
+
+      <div class="grid-row">
+        <div class="column-half">
+          <p>The information I sent doesn't match government records</p>
+        </div>
+        <div class="column-half">
+          <span class="spark-bar">
+             <span style="width: 1%">
+             <h4 class="bold-medium">1%</h4>
+             </span>
+           </span>
+        </div>  
+      </div>  
+
+    </div>
+
+  </div> 
+
+  <hr>
+
+  <!-- GaaP -->
+
+  <div class="grid-row" id="gaap">
+
+    <div class="column-full">
+      <h3 class="bold-large">Government as a Platform</h3>
+      <p>Number of services that are using Government as a Platform products.</p>
+    </div>
+
+    <div class="column-one-third">
+      <div class="data">
+        <h2 class="bold-xlarge">2</h2>
+        <p class="bold-small">services using Notify</p>
+        <ul class="list font-xsmall">
+          <li><span class="bold-xsmall">NEW</span> <a href="#">Apply for a provisional driving license</a></li>
+          <li><a href="#">Do a thing with government</a></li>
+        </ul>
+      </div>
+    </div> 
+    <div class="column-one-third"> 
+      <div class="data">
+        <h2 class="bold-xlarge">0</h2>
+        <p class="bold-small">services using Pay</p>
+      </div>
+    </div> 
+    <div class="column-one-third"> 
+      <div class="data">
+        <h2 class="bold-xlarge">1</h2>
+        <p class="bold-small">service using Verify</p>
+        <ul class="list font-xsmall">
+          <li><a href="#">Do a thing with government</a></li>
+        </ul>
+      </div>
+    </div>  
+  </div>
+
+  <hr>
+
+</main>
+
+{% endblock %}
