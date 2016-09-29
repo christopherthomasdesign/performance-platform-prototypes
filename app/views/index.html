@@ -10,8 +10,8 @@
 
   <div class="phase-banner-alpha">
     <p>
-      <strong class="phase-tag" style="background-color: rgb(11, 12, 12)">PROTOTYPE</strong>
-      <span>This is a prototype, not a live service</span>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your feedback will help us to improve it.</span>
     </p>
   </div>
 
@@ -21,22 +21,32 @@
          Check how government services are doing
       </h1>
       <p>
-        View data on government service activity &mdash; how people are accessing services, how many transactions are happening, and the ways services may be creating extra effort for their users.
+        See how people are accessing services, how many transactions are happening, and the ways services may be creating extra effort for their users.
       </p>
     </div>
   </div>
 
   <div class="grid-row">
-    <div class="column-one-third">
-      <h3 class="heading-medium"><a href="/grouping">View summary</a></h3>
+    <div class="column-two-thirds">
+      <form>
+        <fieldset>
+          <div class="form-group">
+            <!-- <label class="form-label" for="search-box">Search by department, agency, service or task</label> -->
+            <input class="form-control-3-4" id="search-box" type="search" placeholder="Search by department, agency, service or task">
+          </div>
+        </fieldset>  
+      </form>
+      <br>
+      <p>Or <a href="">view summary</a></p>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium"><a href="#">Custom data view</a></h3>
+  </div>    
+
+  <!-- <div class="grid-row">
+    <div class="column-two-thirds">
+      <a class="button" href="grouping" role="button">View summary</a>
+      <a class="button" href="custom-data-view" role="button">Custom data view</a>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium"><a href="#">Search</a></h3>
-    </div>
-  </div>
+  </div> -->
 
 </div>
 
@@ -45,6 +55,7 @@
   <div class="grid-row">
     <div class="column-two-thirds">
       <h2 class="heading-large">Latest activity</h2>
+      <p class="feeds">Get updates <a class="feed-email" href="#">email</a> <a class="feed-feed" href="#">feed</a></p>
     </div>
   </div>
 
@@ -68,14 +79,14 @@
           </tr>
           <tr>
             <td>
-              <a href="">Book a prison visit</a>
-              <br><span class="font-xsmall grey-text">Ministry of Justice</span>
+              <a href="">Apply for a European Patent</a>
+              <br><span class="font-xsmall grey-text">Department for Business, Energy and Industrial Strategy</span>
             </td>
           </tr>
           <tr>
             <td>
-              <a href="">Replace a driving license</a>
-              <br><span class="font-xsmall grey-text">Department for Transport</span>
+              <a href="">Book a prison visit</a>
+              <br><span class="font-xsmall grey-text">Ministry of Justice</span>
             </td>
           </tr>
           <tr>
@@ -86,8 +97,8 @@
           </tr>
           <tr>
             <td>
-              <a href="">Apply for a European Patent</a>
-              <br><span class="font-xsmall grey-text">Department for Business, Energy and Industrial Strategy</span>
+              <a href="">Replace a driving license</a>
+              <br><span class="font-xsmall grey-text">Department for Transport</span>
             </td>
           </tr>
         </tbody>
@@ -181,6 +192,40 @@
   </div>
 
   <hr>
+
+  <div class="grid-row" id="gaap">
+
+    <div class="column-full">
+      <h3 class="bold-medium">Government as a Platform adoption</h3>
+      <br>
+    </div>  
+
+    <div class="column-one-third">
+      <div class="data">
+        <h2 class="bold-xlarge">2</h2>
+        <p class="bold-small">services started using Notify</p>
+        <ul class="list font-xsmall">
+          <li><span class="bold-xsmall">NEW</span> <a href="#">Apply for a provisional driving license</a></li>
+          <li><a href="#">Do a thing with government</a></li>
+        </ul>
+      </div>
+    </div> 
+    <div class="column-one-third"> 
+      <div class="data">
+        <h2 class="bold-xlarge">0</h2>
+        <p class="bold-small">services started using Pay</p>
+      </div>
+    </div> 
+    <div class="column-one-third"> 
+      <div class="data">
+        <h2 class="bold-xlarge">1</h2>
+        <p class="bold-small">service started using Verify</p>
+        <ul class="list font-xsmall">
+          <li><a href="#">Do a thing with government</a></li>
+        </ul>
+      </div>
+    </div>  
+  </div>
 
 </main>
 
