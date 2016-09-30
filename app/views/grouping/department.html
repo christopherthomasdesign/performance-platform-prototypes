@@ -8,6 +8,10 @@
 
 <main id="content" role="main">
 
+  {% block page_banner %}
+    {% include "../includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
   <div class="grid-row">
     <div class="column-two-thirds">
       <h1 class="heading-xlarge">
@@ -78,7 +82,7 @@
   <div class="grid-row" id="transactions">
     <div class="column-two-thirds">
       <h3 class="bold-large">Transactions</h3>
-      <p>The total number of transactions for this department, broken down by delivery organisation.</p>
+      <p>The total number of transactions handled by services within this department.</p>
       <br>
     </div>
   </div>

@@ -58,7 +58,7 @@ hr + .grid-row .column-two-thirds h2 {
   background-color: $govuk-blue;
   width: 100%;
   margin-top: -10px;
-  padding-bottom: 15px;
+  padding-bottom: 60px;
 
   div {
     max-width: 990px;
@@ -75,6 +75,10 @@ hr + .grid-row .column-two-thirds h2 {
 
   a {
     color: $white;
+  }
+
+  a:hover {
+    color: #e3f0f7;
   }
 
   .button {
@@ -101,11 +105,53 @@ hr + .grid-row .column-two-thirds h2 {
 
   }
 
+}
+
+// search box (this is a mess)
+
+.search {
+
   input {
+    -webkit-appearance: none;
+    border: none;
     font-size: 19px;
     line-height: 40px;
+    padding: 0 10px;
   }
 
+  .submit {
+    background-color: $black;
+    background-image: url("../images/icon-search-2x.png"); 
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 11px;
+    color: rgba(0,0,0,0);
+    width: 40px;
+    position: relative;
+    left: 492px;
+    top: -40px;
+  }
+
+  .submit:hover {
+    cursor: pointer;
+  }
+
+}
+
+.twitter-typeahead {
+  width: 75%;
+}
+
+.tt-suggestion {
+  color: $black;
+}
+
+.tt-menu {
+   width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: $secondary-text-colour;
 }
 
 // feed download thing
@@ -499,71 +545,71 @@ margin:-30px 0 0;
 #stack-chart-value-3 { height: 11%; }
 #stack-chart-value-4 { height: 6%; }
 
-// Bar chart
+// // Bar chart
 
-.bar-chart {
-  width: 100%;
-  min-height: 1px;
-  position: relative;
-  margin-top: 15px;
-}
+// .bar-chart {
+//   width: 100%;
+//   min-height: 1px;
+//   position: relative;
+//   margin-top: 15px;
+// }
 
-.bar-chart li {
-  display: inline-block;
-  width: 23%;
-  height: 250px;
-  margin: 0 8px 0 0;
-}
+// .bar-chart li {
+//   display: inline-block;
+//   width: 23%;
+//   height: 250px;
+//   margin: 0 8px 0 0;
+// }
 
-.bar {
-  background-color: $govuk-blue;
-  border-top: 1px solid $white;
-  box-sizing: border-box;
-}
+// .bar {
+//   background-color: $govuk-blue;
+//   border-top: 1px solid $white;
+//   box-sizing: border-box;
+// }
 
-.bar-chart li span {
-  display: block;
-  text-align: center!important;
-  padding: 10px;
-}
+// .bar-chart li span {
+//   display: block;
+//   text-align: center!important;
+//   padding: 10px;
+// }
 
-.phone {
-  background-color: $light-blue;
-}
+// .phone {
+//   background-color: $light-blue;
+// }
 
-.paper {
-  background-color: $light-blue;
-  opacity: 0.5;
-}
+// .paper {
+//   background-color: $light-blue;
+//   opacity: 0.5;
+// }
 
-.bar-chart-key {
-  margin: 15px 0;
+// .bar-chart-key {
+//   margin: 15px 0;
 
-  li {
-    display: inline-block;
-    margin-right: 15px;
-    list-style-type: square;
-  }
+//   li {
+//     display: inline-block;
+//     margin-right: 15px;
+//     list-style-type: square;
+//   }
 
-  li:before {
-    content: '';
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    background-color: $light-blue;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
+//   li:before {
+//     content: '';
+//     display: inline-block;
+//     height: 16px;
+//     width: 16px;
+//     background-color: $light-blue;
+//     vertical-align: middle;
+//     margin-right: 5px;
+//   }
 
-  li:first-of-type:before {
-    background-color: $govuk-blue;
-  }
+//   li:first-of-type:before {
+//     background-color: $govuk-blue;
+//   }
 
-  li:last-of-type:before {
-    opacity: 0.5;
-  }
+//   li:last-of-type:before {
+//     opacity: 0.5;
+//   }
 
-}
+// }
 
 // light grey bar chart background (taken from Notify dashboard 'spark-bar' pattern)
 
