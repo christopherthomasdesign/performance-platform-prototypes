@@ -121,10 +121,10 @@ hr + .grid-row .column-two-thirds h2 {
 
   .submit {
     background-color: $black;
-    background-image: url("../images/icon-search-2x.png"); 
-    background-size: 24px;
+    background-image: url("../images/icon-search-2.png"); 
+    background-size: 22px;
     background-repeat: no-repeat;
-    background-position: 11px;
+    background-position: 10px;
     color: rgba(0,0,0,0);
     width: 40px;
     position: relative;
@@ -520,96 +520,8 @@ margin:-30px 0 0;
 #data-vert-value-3 { height: 11%; }
 #data-vert-value-4 { height: 6%; }
 
-// Stacking chart... Probs just a bigger bar chart tbh
 
-.stack-chart {
-  height: 400px;
-}
 
-.stack-chart div {
-  width: 100%;
-  background-color: $govuk-blue;
-  color: $white;
-  padding: 10px;
-  margin-bottom: 1px;
-  @include core-16;
-  box-sizing: border-box;
-}
-
-.stack-chart div:nth-child(even) {
-  background-color: $light-blue;
-}
-
-#stack-chart-value-1 { height: 67%; }
-#stack-chart-value-2 { height: 16%; }
-#stack-chart-value-3 { height: 11%; }
-#stack-chart-value-4 { height: 6%; }
-
-// // Bar chart
-
-// .bar-chart {
-//   width: 100%;
-//   min-height: 1px;
-//   position: relative;
-//   margin-top: 15px;
-// }
-
-// .bar-chart li {
-//   display: inline-block;
-//   width: 23%;
-//   height: 250px;
-//   margin: 0 8px 0 0;
-// }
-
-// .bar {
-//   background-color: $govuk-blue;
-//   border-top: 1px solid $white;
-//   box-sizing: border-box;
-// }
-
-// .bar-chart li span {
-//   display: block;
-//   text-align: center!important;
-//   padding: 10px;
-// }
-
-// .phone {
-//   background-color: $light-blue;
-// }
-
-// .paper {
-//   background-color: $light-blue;
-//   opacity: 0.5;
-// }
-
-// .bar-chart-key {
-//   margin: 15px 0;
-
-//   li {
-//     display: inline-block;
-//     margin-right: 15px;
-//     list-style-type: square;
-//   }
-
-//   li:before {
-//     content: '';
-//     display: inline-block;
-//     height: 16px;
-//     width: 16px;
-//     background-color: $light-blue;
-//     vertical-align: middle;
-//     margin-right: 5px;
-//   }
-
-//   li:first-of-type:before {
-//     background-color: $govuk-blue;
-//   }
-
-//   li:last-of-type:before {
-//     opacity: 0.5;
-//   }
-
-// }
 
 // light grey bar chart background (taken from Notify dashboard 'spark-bar' pattern)
 
@@ -624,13 +536,39 @@ margin:-30px 0 0;
   color: $text-colour;
 
   span {
-   box-sizing: border-box;
-   display: inline-block;
-   overflow: visible;
-   background: $panel-colour;
-   color: $black;
-   padding: 5px 5px 2px 5px;
-   margin: 3px 0 5px 0;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: visible;
+    background: $panel-colour;
+    color: $black;
+    padding: 3px 0 0;
+    margin: 0px 0 5px 0;
+
+    h4 {
+      padding-left: 5px;
+    }
+  }
+
+}
+
+// change date range pattern
+
+.date-range-selector {
+
+  .form-group {
+    float: none;
+    display: inline-block;
+    width: auto;
+
+    .form-control {
+      width: 250px;
+      margin-right: 10px;
+    }
+
+  }
+
+  input {
+    top: 20px;
   }
 
 }
