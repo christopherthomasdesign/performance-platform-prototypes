@@ -567,9 +567,14 @@ margin:-30px 0 0;
 
   }
 
-  input {
-    top: 20px;
+  input, a {
+    vertical-align: middle;
+    margin-right: 10px;
   }
 
+}
+
+.initially-hidden {
+  display: none;
 }
 

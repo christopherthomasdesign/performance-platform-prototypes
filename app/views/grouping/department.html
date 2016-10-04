@@ -43,9 +43,31 @@
 
   <hr>
 
+  <!-- date range -->
+
   <div class="grid-row">
-    <div class="column-two-thirds">
-      <p class="lede">Showing data from September 2015 to August 2016 <a href="#">Change</a></p>
+    <div class="column-full">
+      <p class="lede">Showing data from September 2015 to August 2016 <a href="javascript:void(0)" id="change-date">Change</a></p>
+      <div class="date-range-selector initially-hidden">
+        <div class="form-group">
+          <label class="form-label" for="select-box">Show period starting</label>
+          <select class="form-control" id="select-box">
+            <option>June 2015</option>
+            <option>March 2015</option>
+            <option>December 2014</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="select-box">up to</label>
+          <select class="form-control" id="select-box">
+            <option>June 2015</option>
+            <option>March 2015</option>
+            <option>December 2014</option>
+          </select>
+        </div>
+        <input class="button" type="submit" value="Apply changes">
+        <a href="javascript:void(0)">Cancel</a>
+      </div>  
     </div>
   </div>
 
@@ -466,4 +488,7 @@
 
 {% endblock %}
 
-
+{% block body_end %}
+{{ super() }}
+  <script src="/public/javascripts/date-range-selector.js"></script>
+{% endblock %}
