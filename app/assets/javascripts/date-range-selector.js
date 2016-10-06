@@ -7,4 +7,5 @@ $(document).ready(function() {
     $('.date-range-selector a').click(function() {
         $('.date-range-selector').hide();
     });
+
 });

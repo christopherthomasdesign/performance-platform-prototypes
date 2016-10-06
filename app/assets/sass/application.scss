@@ -119,6 +119,21 @@ hr + .grid-row .column-two-thirds h2 {
     padding: 0 10px;
   }
 
+  #search-hack {
+    display: inline-block;
+    background-color: $black;
+    background-image: url("../images/icon-search-2.png"); 
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    color: rgba(0,0,0,0);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 492px;
+    top: -40px;
+  }
+
   .submit {
     background-color: $black;
     background-image: url("../images/icon-search-2.png"); 
